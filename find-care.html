@@ -1,0 +1,430 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Join the Omugwo waitlist, be first to access trusted postpartum care in Nigeria.">
+  <title>Find Care, Omugwo</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/find-care.css">
+  <link rel="icon" type="image/svg+xml" href="assets\omugwofavicon-nobg.png">
+</head>
+
+<body class="page-findcare">
+
+  <!-- ── Fixed Navbar ── -->
+  <nav class="nav nav--page nav--fixed" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <div class="nav__pill">
+        <a href="index.html" class="nav__logo" aria-label="Omugwo.com.ng Home">
+          <img src="assets\omugwologo-nobg.png" alt="" class="nav__logo-img" width="28" height="28">
+        </a>
+        <ul class="nav__links" role="list">
+          <li><a href="index.html" class="nav__link">Home</a></li>
+          <li><a href="about.html" class="nav__link">About Us</a></li>
+          <li><a href="find-care.html" class="nav__link">Get a caregiver</a></li>
+          <li><a href="caregiver.html" class="nav__link">Become a care Giver</a></li>
+          <li><a href="services.html" class="nav__link">Services</a></li>
+          <li><a href="contact.html" class="nav__link">Contact</a></li>
+        </ul>
+        <!-- <div class="nav__actions">
+          <a href="find-care.html" class="btn btn--rust btn--sm">Get Started</a>
+        </div> -->
+        <button class="nav__hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+  <div class="nav__mobile" role="dialog" aria-label="Mobile navigation">
+    <button class="nav__mobile-toggle" type="button" aria-label="Close menu">
+      <span></span><span></span>
+    </button>
+    <a href="index.html" class="nav__mobile-logo" aria-label="Omugwo.com.ng Home">
+      <img src="assets\omugwologo-nobg.png" alt="Omugwo.com.ng" class="nav__mobile-logo-img">
+    </a>
+    <ul role="list">
+      <li><a href="index.html" class="nav__link">Home</a></li>
+      <li><a href="about.html" class="nav__link">About Us</a></li>
+      <li><a href="find-care.html" class="nav__link">Find Care</a></li>
+      <li><a href="caregiver.html" class="nav__link">Become a care Giver</a></li>
+      <li><a href="services.html" class="nav__link">Services</a></li>
+      <li><a href="contact.html" class="nav__link">Contact</a></li>
+    </ul>
+    <div style="display:flex;flex-direction:column;gap:1rem;margin-top:auto;">
+      <a href="find-care.html" class="btn btn--outline">Join Waitlist</a>
+      <a href="find-care.html" class="btn btn--rust">Get Started</a>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+     HERO, Split: Left text, Right form
+══════════════════════════════════════════ -->
+  <section class="fc-hero" aria-label="Join the Omugwo waitlist">
+
+    <!-- Floating background orbs -->
+    <div class="fc-orb fc-orb--a" aria-hidden="true"></div>
+    <div class="fc-orb fc-orb--b" aria-hidden="true"></div>
+    <div class="fc-orb fc-orb--c" aria-hidden="true"></div>
+
+    <div class="container fc-hero__inner">
+
+      <!-- ── Left: copy ── -->
+      <div class="fc-hero__left">
+
+        <div class="fc-badge fc-fade-up">
+          <span class="fc-badge__dot"></span>
+          Early access, Lagos
+        </div>
+
+        <h1 class="fc-headline fc-fade-up fc-fade-up--d1">
+          Let's get<br>started
+        </h1>
+
+        <p class="fc-sub fc-fade-up fc-fade-up--d2">
+          Join our waitlist in just a few seconds. Be the first to access trusted, compassionate postpartum support when
+          we launch and secure your spot before availability fills up.
+        </p>
+
+        <!-- Social proof -->
+        <div class="fc-proof fc-fade-up fc-fade-up--d3">
+          <div class="fc-proof__avatars" aria-hidden="true">
+            <div class="fc-proof__av" style="background:linear-gradient(135deg,#BB6B5F,#D4956A)"></div>
+            <div class="fc-proof__av" style="background:linear-gradient(135deg,#7BBE87,#88B7D5)"></div>
+            <div class="fc-proof__av" style="background:linear-gradient(135deg,#88B7D5,#7BBE87)"></div>
+            <div class="fc-proof__av" style="background:linear-gradient(135deg,#E7DCCB,#BB6B5F)"></div>
+          </div>
+          <p><strong>1,200+ mothers</strong> already joined</p>
+        </div>
+
+      </div>
+
+      <!-- ── Right: form card ── -->
+      <div class="fc-form-wrap fc-fade-up fc-fade-up--d2">
+        <div class="fc-form-card" id="fc-form-card">
+
+          <!-- Role toggle, Mother / Caregiver -->
+          <div class="fc-role-toggle" id="fc-role-toggle">
+            <p class="fc-role-toggle__label">I am a…</p>
+            <div class="fc-role-toggle__options">
+              <label class="fc-role-option fc-role-option--active" for="role-mother">
+                <input type="radio" id="role-mother" name="fc-role" value="mother" checked="">
+                <span class="fc-role-option__radio"></span>
+                <span class="fc-role-option__text">Mother</span>
+              </label>
+              <label class="fc-role-option" for="role-caregiver">
+                <input type="radio" id="role-caregiver" name="fc-role" value="caregiver">
+                <span class="fc-role-option__radio"></span>
+                <span class="fc-role-option__text">Caregiver</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Divider -->
+          <div class="fc-form-divider" aria-hidden="true"></div>
+
+          <!-- Fields, shown depend on role -->
+          <div class="fc-fields" id="fc-fields">
+
+            <div class="fc-field">
+              <input id="fc-name" type="text" placeholder="Name*" autocomplete="name" required="">
+              <div class="fc-field__bar"></div>
+            </div>
+
+            <div class="fc-field">
+              <input id="fc-email" type="email" placeholder="Email*" autocomplete="email" required="">
+              <div class="fc-field__bar"></div>
+            </div>
+
+            <div class="fc-field">
+              <input id="fc-phone" type="tel" placeholder="Phone Number*" autocomplete="tel" required="">
+              <div class="fc-field__bar"></div>
+            </div>
+
+            <!-- Mother-only fields -->
+            <div class="fc-field fc-field--mother">
+              <select id="fc-city">
+                <option value="">City*</option>
+                <option>Lagos</option>
+                <option>Abuja (coming soon)</option>
+                <option>Port Harcourt (coming soon)</option>
+                <option>Enugu (coming soon)</option>
+                <option>Other</option>
+              </select>
+              <div class="fc-field__bar"></div>
+            </div>
+
+            <div class="fc-field fc-field--mother">
+              <select id="fc-service">
+                <option value="">Services needed*</option>
+                <option>Newborn care</option>
+                <option>Night support</option>
+                <option>Breastfeeding assistance</option>
+                <option>Household help</option>
+                <option>Postpartum recovery</option>
+                <option>Full Omugwo package</option>
+              </select>
+              <div class="fc-field__bar"></div>
+            </div>
+
+            <div class="fc-field fc-field--mother">
+              <label for="fc-care-date" class="fc-field__label">When do you need care to start?*</label>
+              <input id="fc-care-date" type="date" min="" required="">
+              <div class="fc-field__bar"></div>
+            </div>
+
+            <div class="fc-field fc-field--mother">
+              <select id="fc-duration">
+                <option value="">How long will you need support?*</option>
+                <option>Less than 1 week</option>
+                <option>1 week</option>
+                <option>2 weeks</option>
+                <option>3 to 4 weeks</option>
+                <option>1 month</option>
+                <option>More than 1 month</option>
+                <option>Flexible / not sure yet</option>
+              </select>
+              <div class="fc-field__bar"></div>
+            </div>
+
+            <div class="fc-field fc-field--mother">
+              <select id="fc-urgency">
+                <option value="">How urgent is this?*</option>
+                <option>Very urgent — I need care within 3 days</option>
+                <option>Urgent — I need care within a week</option>
+                <option>Soon — within the next 2 weeks</option>
+                <option>Planning ahead — within a month</option>
+                <option>Just exploring for now</option>
+              </select>
+              <div class="fc-field__bar"></div>
+            </div>
+
+            <!-- Caregiver-only fields -->
+            <div class="fc-field fc-field--caregiver" hidden="">
+              <div class="fc-caregiver-redirect">
+                <p class="fc-caregiver-redirect__text">Looking to join as a caregiver? We have a dedicated registration
+                  page for you.</p>
+                <a href="caregiver.html" class="fc-caregiver-redirect__btn">Register as a Caregiver →</a>
+              </div>
+            </div>
+
+          </div>
+
+          <button class="fc-submit-btn" id="fc-submit-btn" type="button">
+            Join the waitlist
+          </button>
+
+          <p class="fc-form-note">No spam. Unsubscribe anytime. 🔒</p>
+
+        </div>
+
+        <!-- Success state -->
+        <div class="fc-success" id="fc-success" hidden="">
+          <div class="fc-success__burst" aria-hidden="true"></div>
+          <div class="fc-success__icon">🌿</div>
+          <h2 class="fc-success__title">You're on the list!</h2>
+          <p class="fc-success__text">Thank you for joining Omugwo. We'll reach out on WhatsApp within 24 hours to
+            confirm your spot and discuss your care needs.</p>
+          <p class="fc-success__text">Tell a fellow mother, the village grows when we share.</p>
+          <div class="fc-success__actions">
+            <a href="index.html" class="btn btn--outline">Back to Home</a>
+            <a href="services.html" class="btn btn--rust">Explore Services</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════
+     WHY JOIN, Neumorphic stat-style cards
+══════════════════════════════════════════ -->
+  <section class="fc-why" aria-label="Why join the waitlist">
+
+    <!-- Subtle floating shapes -->
+    <div class="fc-why__shape fc-why__shape--1" aria-hidden="true"></div>
+    <div class="fc-why__shape fc-why__shape--2" aria-hidden="true"></div>
+
+    <div class="container">
+
+      <div class="fc-why__header">
+        <p class="fc-why__eyebrow reveal">The Omugwo Promise</p>
+        <h2 class="fc-why__headline reveal reveal-delay-1">Why join the waitlist?</h2>
+        <p class="fc-why__sub reveal reveal-delay-2">Three things you get the moment you sign up, before the app even
+          launches.</p>
+      </div>
+
+      <div class="fc-why__grid">
+
+        <!-- Card 1 -->
+        <div class="fc-why-card reveal" data-index="0">
+          <div class="fc-why-card__accent fc-why-card__accent--coral"></div>
+          <div class="fc-why-card__top">
+            <span class="fc-why-card__tag">Founding member</span>
+            <div class="fc-why-card__badge-icon fc-why-card__badge-icon--coral">01</div>
+          </div>
+          <div class="fc-why-card__big">1st</div>
+          <h3 class="fc-why-card__title">Priority access</h3>
+          <p class="fc-why-card__text">Waitlist members get first access when Omugwo launches in their city, before the
+            general public opens.</p>
+          <!-- animated progress bar -->
+          <div class="fc-why-card__bar-wrap">
+            <div class="fc-why-card__bar-track">
+              <div class="fc-why-card__bar fc-why-card__bar--coral" data-width="100"></div>
+            </div>
+            <span class="fc-why-card__bar-label">You're ahead of the queue</span>
+          </div>
+          <div class="fc-why-card__source">
+            <span class="fc-why-card__dot" style="background:#BB6B5F;"></span>
+            Early access benefit
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="fc-why-card reveal reveal-delay-1" data-index="1">
+          <div class="fc-why-card__accent fc-why-card__accent--amber"></div>
+          <div class="fc-why-card__top">
+            <span class="fc-why-card__tag">Beta members</span>
+            <div class="fc-why-card__badge-icon fc-why-card__badge-icon--amber">02</div>
+          </div>
+          <!-- Mini ticker bars, no SVG -->
+          <div class="fc-why-card__tickers">
+            <div class="fc-why-card__ticker" style="height:30%"></div>
+            <div class="fc-why-card__ticker" style="height:55%"></div>
+            <div class="fc-why-card__ticker" style="height:40%"></div>
+            <div class="fc-why-card__ticker" style="height:75%"></div>
+            <div class="fc-why-card__ticker fc-why-card__ticker--active" style="height:45%"></div>
+            <div class="fc-why-card__ticker" style="height:60%"></div>
+            <div class="fc-why-card__ticker" style="height:35%"></div>
+            <div class="fc-why-card__ticker" style="height:50%"></div>
+          </div>
+          <div class="fc-why-card__big">20%</div>
+          <h3 class="fc-why-card__title">Beta discount</h3>
+          <p class="fc-why-card__text">Early users receive an exclusive 20% discount on their first booking, our
+            thank-you for trusting us early.</p>
+          <div class="fc-why-card__source">
+            <span class="fc-why-card__dot" style="background:#E8A030;"></span>
+            Launch offer benefit
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="fc-why-card reveal reveal-delay-2" data-index="2">
+          <div class="fc-why-card__accent fc-why-card__accent--sage"></div>
+          <div class="fc-why-card__top">
+            <span class="fc-why-card__tag fc-why-card__tag--sage">We build for you</span>
+            <div class="fc-why-card__badge-icon fc-why-card__badge-icon--sage">03</div>
+          </div>
+          <!-- Pulse ring animation, CSS only, no SVG -->
+          <div class="fc-why-card__pulse-wrap">
+            <div class="fc-why-card__pulse-ring fc-why-card__pulse-ring--3"></div>
+            <div class="fc-why-card__pulse-ring fc-why-card__pulse-ring--2"></div>
+            <div class="fc-why-card__pulse-ring fc-why-card__pulse-ring--1"></div>
+            <div class="fc-why-card__pulse-core"></div>
+          </div>
+          <div class="fc-why-card__big fc-why-card__big--sage">You</div>
+          <h3 class="fc-why-card__title">Shape the product</h3>
+          <p class="fc-why-card__text">Your feedback directly shapes what we build next. Tell us what you need, and
+            watch it appear in the app.</p>
+          <div class="fc-why-card__source">
+            <span class="fc-why-card__dot" style="background:#7BBE87;"></span>
+            Community benefit
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Closing statement -->
+      <p class="fc-why__closing reveal">
+        You carried a life for nine months. The care should not stop at delivery. <a href="#fc-form-card">Join the
+          waitlist now</a>, it takes less than 60 seconds.
+      </p>
+
+    </div>
+  </section>
+
+
+  <!-- ── Footer ── -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <img src="assets\omugwologo-nobg.png" alt="" width="150" height="40" class="footer__logo-img">
+            <span class="footer__logo-text"></span>
+          </div>
+          <p>Thoughtfully building care for you and your baby. Rooted in African tradition, designed for modern
+            families.</p>
+          <div class="footer__social" aria-label="Social media links">
+            <a href="https://instagram.com/Omugwo.com.ng" class="footer__social-link" aria-label="Instagram"
+              target="_blank" rel="noopener"><svg width="14" height="14" viewbox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5"></rect>
+                <circle cx="12" cy="12" r="5"></circle>
+                <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"></circle>
+              </svg></a>
+            <a href="https://twitter.com/Omugwo.com.ng" class="footer__social-link" aria-label="Twitter / X"
+              target="_blank" rel="noopener"><svg width="14" height="14" viewbox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
+                </path>
+              </svg></a>
+            <a href="https://facebook.com/Omugwo.com.ng" class="footer__social-link" aria-label="Facebook"
+              target="_blank" rel="noopener"><svg width="14" height="14" viewbox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z">
+                </path>
+              </svg></a>
+          </div>
+        </div>
+        <div>
+          <p class="footer__col-title">Quick Links</p>
+          <ul class="footer__links" role="list">
+            <li><a href="index.html" class="footer__link">Home</a></li>
+            <li><a href="#about" class="footer__link">About</a></li>
+            <li><a href="services.html" class="footer__link">Services</a></li>
+            <li><a href="#how-it-works" class="footer__link">How It Works</a></li>
+            <li><a href="#faq" class="footer__link">FAQs</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer__col-title">Contact</p>
+          <ul class="footer__links" role="list">
+            <li><a href="tel:+2349065400403" class="footer__link">+234 906 540 0403</a></li>
+            <li><a href="tel:+234 817 352 0888" class="footer__link">+234 817 352 0888</a></li>
+            <li><a href="mailto:omugwo.com.ng@gmail.com" class="footer__link">omugwo.com.ng@gmail.com</a></li>
+            <li><a href="contact.html" class="footer__link">Contact Form</a></li>
+            <li><a href="contact.html" class="footer__link">Partner with Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer__col-title">Resources</p>
+          <ul class="footer__links" role="list">
+            <li><a href="coming-soon.html" class="footer__link">Omugwo Academy</a></li>
+            <li><a href="caregiver.html" class="footer__link">Become a Caregiver</a></li>
+            <li><a href="services.html" class="footer__link">Postpartum Guide</a></li>
+            <li><a href="coming-soon.html" class="footer__link">Press</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">&copy; 2026 Omugwo.com.ng (RC: ). All rights reserved.</p>
+        <nav class="footer__legal" aria-label="Legal">
+          <a href="coming-soon.html">Privacy Policy</a>
+          <a href="coming-soon.html">Terms of Service</a>
+          <a href="coming-soon.html">Cookie Policy</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/pages.js"></script>
+  <script src="js/find-care.js"></script>
+</body>
+
+</html>

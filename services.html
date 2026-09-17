@@ -1,0 +1,480 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Omugwo Services, Newborn care, night support, breastfeeding assistance, household help and more.">
+  <title>Our Services</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/services.css">
+  <link rel="icon" type="image/svg+xml" href="assets\omugwofavicon-nobg.png">
+</head>
+
+<body class="page-services">
+
+  <!-- ── Fixed Navbar ── -->
+  <nav class="nav nav--page nav--fixed" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <div class="nav__pill">
+        <a href="index.html" class="nav__logo" aria-label="Omugwo.com.ng Home">
+          <img src="assets\omugwologo-nobg.png" alt="" class="nav__logo-img" width="28" height="28">
+        </a>
+        <ul class="nav__links" role="list">
+          <li><a href="index.html" class="nav__link">Home</a></li>
+          <li><a href="about.html" class="nav__link">About Us</a></li>
+          <li><a href="find-care.html" class="nav__link">Get a caregiver</a></li>
+          <li><a href="caregiver.html" class="nav__link">Become a care Giver</a></li>
+          <li><a href="services.html" class="nav__link">Services</a></li>
+          <li><a href="contact.html" class="nav__link">Contact</a></li>
+        </ul>
+        <!-- <div class="nav__actions">
+          <a href="find-care.html" class="btn btn--rust btn--sm">Get Started</a>
+        </div> -->
+        <button class="nav__hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+  <div class="nav__mobile" role="dialog" aria-label="Mobile navigation">
+    <button class="nav__mobile-toggle" type="button" aria-label="Close menu">
+      <span></span><span></span>
+    </button>
+    <a href="index.html" class="nav__mobile-logo" aria-label="Omugwo.com.ng Home">
+      <img src="assets\omugwologo-nobg.png" alt="Omugwo.com.ng" class="nav__mobile-logo-img">
+    </a>
+    <ul role="list">
+      <li><a href="index.html" class="nav__link">Home</a></li>
+      <li><a href="about.html" class="nav__link">About Us</a></li>
+      <li><a href="find-care.html" class="nav__link">Find Care</a></li>
+      <li><a href="caregiver.html" class="nav__link">Become a care Giver</a></li>
+      <li><a href="services.html" class="nav__link">Services</a></li>
+      <li><a href="contact.html" class="nav__link">Contact</a></li>
+    </ul>
+    <div style="display:flex;flex-direction:column;gap:1rem;margin-top:auto;">
+      <a href="find-care.html" class="btn btn--outline">Join Waitlist</a>
+      <a href="find-care.html" class="btn btn--rust">Get Started</a>
+    </div>
+  </div>
+
+
+  <!-- ══════════════════════════════════════════
+     1. HERO
+══════════════════════════════════════════ -->
+  <section class="sv-hero" aria-label="Our Services">
+    <div class="sv-hero__bg" aria-hidden="true"></div>
+    <div class="sv-orb sv-orb--1" aria-hidden="true"></div>
+    <div class="sv-orb sv-orb--2" aria-hidden="true"></div>
+    <div class="container sv-hero__inner">
+      <p class="sv-hero__eyebrow sv-fade-up">What We Offer</p>
+      <h1 class="sv-hero__headline sv-fade-up sv-fade-up--d1">
+        We offer a wide range<br>of <em>postpartum care</em>
+      </h1>
+      <p class="sv-hero__sub sv-fade-up sv-fade-up--d2">
+        Every service is delivered by a verified, trained caregiver, matched specifically to your family's needs,
+        culture, and language.
+      </p>
+      <div class="sv-hero__pills sv-fade-up sv-fade-up--d3">
+        <span class="sv-hero__pill">Lagos, Nigeria</span>
+        <span class="sv-hero__pill sv-hero__pill--green">Verified caregivers only</span>
+        <span class="sv-hero__pill">Igbo · Yoruba · Hausa · English</span>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════
+     2. STAT WIDGET CARDS, neumorphic, reference style
+══════════════════════════════════════════ -->
+  <!--
+<section class="sv-stats" aria-label="The care gap we're solving">
+  <div class="container">
+    <div class="sv-stats__header">
+      <p class="sv-stats__eyebrow reveal">Why this matters</p>
+      <h2 class="sv-stats__headline reveal reveal-delay-1">The reality behind the numbers</h2>
+    </div>
+    <div class="sv-stats__grid">
+
+      
+      <div class="sv-stat-card reveal" role="listitem">
+        <div class="sv-stat-card__accent sv-stat-card__accent--coral"></div>
+        <div class="sv-stat-card__top">
+          <span class="sv-stat-card__tag">Postnatal coverage</span>
+          <div class="sv-stat-card__icon-badge sv-stat-card__icon-badge--coral">01</div>
+        </div>
+        <div class="sv-stat-card__num"><span data-target="58" data-suffix="%">0%</span></div>
+        <p class="sv-stat-card__label">of mothers get no postnatal care</p>
+        <p class="sv-stat-card__sub">More than half of women who give birth in Nigeria go home with no follow-up, no check-in, and no support.</p>
+        <div class="sv-stat-card__bar-wrap">
+          <div class="sv-stat-card__bar-track">
+            <div class="sv-stat-card__bar sv-stat-card__bar--coral" data-width="58"></div>
+          </div>
+          <span class="sv-stat-card__bar-label">58% without care</span>
+        </div>
+        <div class="sv-stat-card__source">
+          <span class="sv-stat-card__dot" style="background:#BB6B5F"></span>
+          <a href="https://www.who.int" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;text-decoration-color:rgba(63,59,54,0.25);">WHO Nigeria Maternal Health Report</a>
+        </div>
+      </div>
+
+      <div class="sv-stat-card reveal reveal-delay-1" role="listitem">
+        <div class="sv-stat-card__accent sv-stat-card__accent--amber"></div>
+        <div class="sv-stat-card__top">
+          <span class="sv-stat-card__tag">Full care journey</span>
+          <div class="sv-stat-card__icon-badge sv-stat-card__icon-badge--amber">02</div>
+        </div>
+        <div class="sv-stat-card__num"><span data-target="6.5" data-suffix="%">0%</span></div>
+        <p class="sv-stat-card__label">complete the full care journey</p>
+        <p class="sv-stat-card__sub">Out of every 100 mothers, fewer than 7 receive complete maternal care from antenatal to postnatal.</p>
+        <div class="sv-stat-card__tickers">
+          <div class="sv-stat-card__ticker" style="height:32%"></div>
+          <div class="sv-stat-card__ticker" style="height:56%"></div>
+          <div class="sv-stat-card__ticker" style="height:40%"></div>
+          <div class="sv-stat-card__ticker" style="height:72%"></div>
+          <div class="sv-stat-card__ticker" style="height:22%"></div>
+          <div class="sv-stat-card__ticker sv-stat-card__ticker--hi" style="height:6.5%"></div>
+          <div class="sv-stat-card__ticker" style="height:48%"></div>
+          <div class="sv-stat-card__ticker" style="height:62%"></div>
+        </div>
+        <div class="sv-stat-card__source">
+          <span class="sv-stat-card__dot" style="background:#E8A030"></span>
+          <a href="https://dhsprogram.com" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;text-decoration-color:rgba(63,59,54,0.25);">NDHS 2023 survey data</a>
+        </div>
+      </div>
+
+      <div class="sv-stat-card reveal reveal-delay-2" role="listitem">
+        <div class="sv-stat-card__accent sv-stat-card__accent--sage"></div>
+        <div class="sv-stat-card__top">
+          <span class="sv-stat-card__tag sv-stat-card__tag--sage">We exist because of this</span>
+          <div class="sv-stat-card__icon-badge sv-stat-card__icon-badge--sage">03</div>
+        </div>
+        <div class="sv-stat-card__pulse-wrap">
+          <div class="sv-stat-card__pulse-ring"></div>
+          <div class="sv-stat-card__pulse-ring sv-stat-card__pulse-ring--2"></div>
+          <div class="sv-stat-card__pulse-ring sv-stat-card__pulse-ring--3"></div>
+          <div class="sv-stat-card__pulse-core"></div>
+        </div>
+        <div class="sv-stat-card__num sv-stat-card__num--sage"><span data-target="82" data-suffix="k">0k</span></div>
+        <p class="sv-stat-card__label">maternal deaths every year</p>
+        <p class="sv-stat-card__sub">Nigeria accounts for one of the highest maternal mortality rates in the world. Most of these deaths are preventable.</p>
+        <div class="sv-stat-card__source">
+          <span class="sv-stat-card__dot" style="background:#7BBE87"></span>
+          <a href="https://www.who.int" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;text-decoration-color:rgba(63,59,54,0.25);">WHO Maternal Health Data 2023</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+-->
+
+  <!-- ══════════════════════════════════════════
+     3. SERVICE CARDS GRID
+══════════════════════════════════════════ -->
+  <section class="sv-grid-section" aria-label="All services">
+    <div class="container">
+      <div class="sv-grid-header">
+        <p class="sv-grid-eyebrow reveal">Our Services</p>
+        <h2 class="sv-grid-headline reveal reveal-delay-1">Everything your family needs</h2>
+        <p class="sv-grid-sub reveal reveal-delay-2">From the moment you leave the hospital through your first six weeks
+          at home, Omugwo has you covered at every stage.</p>
+      </div>
+
+      <div class="sv-grid">
+
+        <div class="sv-card reveal" style="--card-accent:linear-gradient(90deg,#BB6B5F,#D4956A);">
+          <div class="sv-card__top">
+            <div class="sv-card__icon" style="--ic-bg:#FDE8E4;--ic-color:#BB6B5F;">
+              <svg width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round">
+                <circle cx="12" cy="12" r="9"></circle>
+                <path d="M12 7v5l3 2"></path>
+              </svg>
+            </div>
+            <span class="sv-card__num">01</span>
+          </div>
+          <h3>Newborn Care</h3>
+          <p>Gentle, expert attention for your baby in the critical first weeks, bathing, feeding, sleep routines, cord
+            care, and health monitoring.</p>
+          <ul class="sv-card__list">
+            <li>Daily newborn bathing &amp; hygiene</li>
+            <li>Feeding schedule management</li>
+            <li>Sleep training support</li>
+            <li>Umbilical cord &amp; skin care</li>
+          </ul>
+          <a href="find-care.html" class="sv-card__cta">Book this service →</a>
+        </div>
+
+        <div class="sv-card reveal reveal-delay-1" style="--card-accent:linear-gradient(90deg,#4A8E54,#7BBE87);">
+          <div class="sv-card__top">
+            <div class="sv-card__icon" style="--ic-bg:#E8F3EC;--ic-color:#4A8E54;">
+              <svg width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+              </svg>
+            </div>
+            <span class="sv-card__num">02</span>
+          </div>
+          <h3>Night Support</h3>
+          <p>Sleep is healing. Our overnight caregivers take the night shift so you can rest and recover fully.</p>
+          <ul class="sv-card__list">
+            <li>Overnight baby monitoring</li>
+            <li>Night feeds &amp; soothing</li>
+            <li>Mother wellness checks</li>
+            <li>Morning handover report</li>
+          </ul>
+          <a href="find-care.html" class="sv-card__cta">Book this service →</a>
+        </div>
+
+        <div class="sv-card reveal reveal-delay-2" style="--card-accent:linear-gradient(90deg,#3A7AA0,#88B7D5);">
+          <div class="sv-card__top">
+            <div class="sv-card__icon" style="--ic-bg:#EAF0F8;--ic-color:#3A7AA0;">
+              <svg width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round">
+                <circle cx="12" cy="3.5" r="2"></circle>
+                <path d="M9 7.5c0 0-1.5 1-1.5 3.5v3h9V11c0-2.5-1.5-3.5-1.5-3.5H9z"></path>
+                <circle cx="16.5" cy="11" r="2" opacity="0.6"></circle>
+                <path d="M16 14c-1 1-3 1.5-5 1"></path>
+              </svg>
+            </div>
+            <span class="sv-card__num">03</span>
+          </div>
+          <h3>Breastfeeding Assistance</h3>
+          <p>Our trained lactation supporters help you establish a confident, comfortable breastfeeding routine, in your
+            language.</p>
+          <ul class="sv-card__list">
+            <li>Latch technique coaching</li>
+            <li>Milk supply support</li>
+            <li>Pumping &amp; storage guidance</li>
+            <li>Igbo, Yoruba &amp; Hausa available</li>
+          </ul>
+          <a href="find-care.html" class="sv-card__cta">Book this service →</a>
+        </div>
+
+        <div class="sv-card reveal" style="--card-accent:linear-gradient(90deg,#BB6B5F,#D4956A);">
+          <div class="sv-card__top">
+            <div class="sv-card__icon" style="--ic-bg:#FDE8E4;--ic-color:#BB6B5F;">
+              <svg width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round">
+                <path d="M3 10.5L12 3l9 7.5V20a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V10.5z"></path>
+                <circle cx="9" cy="16" r="1" fill="currentColor"></circle>
+                <circle cx="12" cy="16" r="1" fill="currentColor"></circle>
+                <circle cx="15" cy="16" r="1" fill="currentColor"></circle>
+              </svg>
+            </div>
+            <span class="sv-card__num">04</span>
+          </div>
+          <h3>Household Help</h3>
+          <p>Light home management so you can focus entirely on bonding and recovery. Cooking, cleaning, laundry,
+            handled with warmth.</p>
+          <ul class="sv-card__list">
+            <li>Meal preparation (culturally appropriate)</li>
+            <li>Light cleaning &amp; laundry</li>
+            <li>Sibling care assistance</li>
+            <li>Grocery &amp; errand support</li>
+          </ul>
+          <a href="find-care.html" class="sv-card__cta">Book this service →</a>
+        </div>
+
+        <div class="sv-card reveal reveal-delay-1" style="--card-accent:linear-gradient(90deg,#4A8E54,#7BBE87);">
+          <div class="sv-card__top">
+            <div class="sv-card__icon" style="--ic-bg:#E8F3EC;--ic-color:#4A8E54;">
+              <svg width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round">
+                <circle cx="12" cy="4.5" r="2"></circle>
+                <path d="M12 7.5c-2 0-3.5 1.2-3.5 3v1.5c0 2.5 1.5 4.5 3.5 5s3.5-2 3.5-4.5V10.5c0-1.8-1.5-3-3.5-3z"
+                  opacity="0.85"></path>
+                <path d="M9.5 16.5 8.5 21M14.5 16.5 15.5 21"></path>
+              </svg>
+            </div>
+            <span class="sv-card__num">05</span>
+          </div>
+          <h3>Postpartum Recovery</h3>
+          <p>Physical and emotional support in recovery, from traditional healing practices to modern wellness routines,
+            adapted to your culture.</p>
+          <ul class="sv-card__list">
+            <li>Traditional tummy binding (oja)</li>
+            <li>Herbal steam &amp; bath support</li>
+            <li>Postnatal massage guidance</li>
+            <li>Emotional wellness check-ins</li>
+          </ul>
+          <a href="find-care.html" class="sv-card__cta">Book this service →</a>
+        </div>
+
+        <div class="sv-card sv-card--featured reveal reveal-delay-2">
+          <div class="sv-card__top">
+            <div class="sv-card__icon" style="--ic-bg:rgba(255,255,255,0.15);--ic-color:#fff;">
+              <svg width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <span class="sv-card__num">06</span>
+          </div>
+          <h3>Full Omugwo Package</h3>
+          <p>The complete village experience. A dedicated caregiver with you through your full postpartum journey, all
+            services, one person.</p>
+          <ul class="sv-card__list">
+            <li>All five services combined</li>
+            <li>Dedicated primary caregiver</li>
+            <li>7, 14, or 28-day packages</li>
+            <li>Family coordination support</li>
+          </ul>
+          <a href="find-care.html" class="sv-card__cta">Book this service →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════
+     4. APPROACH SECTION
+══════════════════════════════════════════ -->
+  <section class="sv-approach" aria-label="Our approach">
+    <div class="container">
+      <div class="sv-approach__inner">
+        <div>
+          <p class="sv-approach__label reveal">Our Approach</p>
+          <h2 class="sv-approach__headline reveal reveal-delay-1">We don't just hire help.<br>We build trust.</h2>
+          <p class="sv-approach__body reveal reveal-delay-2">Every Omugwo caregiver completes our rigorous Omugwo
+            Academy training programme before being listed. They understand newborn health, traditional postpartum
+            practices, and most importantly, how to make a new mother feel safe.</p>
+          <div class="sv-steps reveal reveal-delay-3">
+            <div class="sv-step">
+              <span class="sv-step__num">01</span>
+              <div><strong>Background Check</strong><span>Identity, criminal record, and reference verification.</span>
+              </div>
+            </div>
+            <div class="sv-step">
+              <span class="sv-step__num">02</span>
+              <div><strong>Omugwo Academy Training</strong><span>40+ hours covering newborn care, maternal health, and
+                  cultural competency.</span></div>
+            </div>
+            <div class="sv-step">
+              <span class="sv-step__num">03</span>
+              <div><strong>Health Screening</strong><span>Full medical clearance before first assignment.</span></div>
+            </div>
+            <div class="sv-step">
+              <span class="sv-step__num">04</span>
+              <div><strong>Ongoing Review</strong><span>Rated after every job. Continuous quality management.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sv-approach__img-wrap reveal">
+          <img src="images/problem-4.jpg" alt="Caregiver with mother"
+            style="width:100%;height:100%;object-fit:cover;border-radius:24px;"
+            onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
+          <div class="sv-approach__img-placeholder" style="display:none;"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════
+     5. CTA
+══════════════════════════════════════════ -->
+  <section class="sv-cta" aria-label="Get started">
+    <div class="sv-cta__orb sv-cta__orb--1" aria-hidden="true"></div>
+    <div class="sv-cta__orb sv-cta__orb--2" aria-hidden="true"></div>
+    <div class="container sv-cta__inner">
+      <h2 class="sv-cta__headline reveal">Find the right care<br>for your family</h2>
+      <p class="sv-cta__sub reveal reveal-delay-1">Tell us your needs and we'll match you with the perfect Omugwo
+        caregiver.</p>
+      <div class="sv-cta__actions reveal reveal-delay-2">
+        <a href="find-care.html" class="btn btn--rust btn--lg">Find a Caregiver</a>
+        <a href="contact.html" class="btn btn--outline-white btn--lg">Ask a Question</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ── Footer ── -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <img src="assets\omugwologo-nobg.png" alt="" width="150" height="40" class="footer__logo-img">
+            <span class="footer__logo-text"></span>
+          </div>
+          <p>Thoughtfully building care for you and your baby. Rooted in African tradition, designed for modern
+            families.</p>
+          <div class="footer__social" aria-label="Social media links">
+            <a href="https://instagram.com/Omugwo.com.ng" class="footer__social-link" aria-label="Instagram"
+              target="_blank" rel="noopener"><svg width="14" height="14" viewbox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5"></rect>
+                <circle cx="12" cy="12" r="5"></circle>
+                <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"></circle>
+              </svg></a>
+            <a href="https://twitter.com/Omugwo.com.ng" class="footer__social-link" aria-label="Twitter / X"
+              target="_blank" rel="noopener"><svg width="14" height="14" viewbox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
+                </path>
+              </svg></a>
+            <a href="https://facebook.com/Omugwo.com.ng" class="footer__social-link" aria-label="Facebook"
+              target="_blank" rel="noopener"><svg width="14" height="14" viewbox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z">
+                </path>
+              </svg></a>
+          </div>
+        </div>
+        <div>
+          <p class="footer__col-title">Quick Links</p>
+          <ul class="footer__links" role="list">
+            <li><a href="index.html" class="footer__link">Home</a></li>
+            <li><a href="#about" class="footer__link">About</a></li>
+            <li><a href="services.html" class="footer__link">Services</a></li>
+            <li><a href="#how-it-works" class="footer__link">How It Works</a></li>
+            <li><a href="#faq" class="footer__link">FAQs</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer__col-title">Contact</p>
+          <ul class="footer__links" role="list">
+            <li><a href="tel:+2349065400403" class="footer__link">+234 906 540 0403</a></li>
+            <li><a href="tel:+234 817 352 0888" class="footer__link">+234 817 352 0888</a></li>
+            <li><a href="mailto:omugwo.com.ng@gmail.com" class="footer__link">omugwo.com.ng@gmail.com</a></li>
+            <li><a href="contact.html" class="footer__link">Contact Form</a></li>
+            <li><a href="contact.html" class="footer__link">Partner with Us</a></li>
+            <li><a href="contact.html" class="footer__link">Contact Form</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer__col-title">Resources</p>
+          <ul class="footer__links" role="list">
+            <li><a href="coming-soon.html" class="footer__link">Omugwo Academy</a></li>
+            <li><a href="caregiver.html" class="footer__link">Become a Caregiver</a></li>
+            <li><a href="services.html" class="footer__link">Postpartum Guide</a></li>
+            <li><a href="coming-soon.html" class="footer__link">Press</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">&copy; 2026 Omugwo.com.ng (RC: ). All rights reserved.</p>
+        <nav class="footer__legal" aria-label="Legal">
+          <a href="coming-soon.html">Privacy Policy</a>
+          <a href="coming-soon.html">Terms of Service</a>
+          <a href="coming-soon.html">Cookie Policy</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/pages.js"></script>
+  <script src="js/services.js"></script>
+</body>
+
+</html>

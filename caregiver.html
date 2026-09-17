@@ -1,0 +1,433 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Register your interest to become an Omugwo caregiver. Join our network of trusted postpartum care professionals in Nigeria.">
+  <title>Become a Caregiver — Omugwo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="css2-1?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/caregiver.css">
+  <link rel="icon" type="image/svg+xml" href="assets\omugwofavicon-nobg.png">
+</head>
+
+<body class="page-caregiver">
+
+  <!-- ── Fixed Navbar ── -->
+  <nav class="nav nav--page nav--fixed" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <div class="nav__pill">
+        <a href="index.html" class="nav__logo" aria-label="Omugwo.com.ng Home">
+          <img src="assets\omugwologo-nobg.png" alt="" class="nav__logo-img" width="28" height="28">
+        </a>
+        <ul class="nav__links" role="list">
+          <li><a href="index.html" class="nav__link">Home</a></li>
+          <li><a href="about.html" class="nav__link">About Us</a></li>
+          <li><a href="find-care.html" class="nav__link">Get a caregiver</a></li>
+          <li><a href="caregiver.html" class="nav__link">Become a care Giver</a></li>
+          <li><a href="services.html" class="nav__link">Services</a></li>
+          <li><a href="contact.html" class="nav__link">Contact</a></li>
+        </ul>
+        <!-- <div class="nav__actions">
+          <a href="find-care.html" class="btn btn--rust btn--sm">Get Started</a>
+        </div> -->
+        <button class="nav__hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="nav__mobile" role="dialog" aria-label="Mobile navigation">
+    <button class="nav__mobile-toggle" type="button" aria-label="Close menu">
+      <span></span><span></span>
+    </button>
+    <a href="index.html" class="nav__mobile-logo" aria-label="Omugwo.com.ng Home">
+      <img src="assets\omugwologo-nobg.png" alt="Omugwo.com.ng" class="nav__mobile-logo-img">
+    </a>
+    <ul role="list">
+      <li><a href="index.html" class="nav__link">Home</a></li>
+      <li><a href="about.html" class="nav__link">About Us</a></li>
+      <li><a href="find-care.html" class="nav__link">Find Care</a></li>
+      <li><a href="caregiver.html" class="nav__link">Become a care Giver</a></li>
+      <li><a href="services.html" class="nav__link">Services</a></li>
+      <li><a href="contact.html" class="nav__link">Contact</a></li>
+    </ul>
+    <div style="display:flex;flex-direction:column;gap:1rem;margin-top:auto;">
+      <a href="find-care.html" class="btn btn--outline">Join Waitlist</a>
+      <a href="find-care.html" class="btn btn--rust">Get Started</a>
+    </div>
+  </div>
+
+
+  <!-- ══════════════════════════════════════════════
+     PAGE SPLIT — Photo left, Form right
+══════════════════════════════════════════════ -->
+  <div class="cg-page">
+
+    <!-- ════════ LEFT — Photo panel ════════ -->
+    <div class="cg-panel" aria-hidden="true">
+
+      <!-- Background image — replace src when ready -->
+      <div class="cg-panel__img">
+        <img src="images/midwife2.jpg" alt="An Omugwo caregiver with a mother and newborn"
+          onerror="this.style.display='none'">
+        <!-- Gradient placeholder shown if image is missing -->
+        <div class="cg-panel__placeholder"></div>
+      </div>
+
+      <!-- Overlay -->
+      <div class="cg-panel__overlay"></div>
+
+      <!-- Content on top of image -->
+      <div class="cg-panel__content">
+
+        <!-- Logo -->
+        <a href="index.html" class="cg-panel__logo">
+          <img src="assets/logo.svg" alt="" width="30" height="30">
+          <span>Omugwo</span>
+        </a>
+
+        <!-- Main copy -->
+        <div class="cg-panel__body">
+          <div class="cg-panel__badge">
+            <span class="cg-panel__badge-dot"></span>
+            Now accepting applications
+          </div>
+
+          <h1 class="cg-panel__headline">
+            Bring the<br>
+            village<br>
+            back.
+          </h1>
+
+          <p class="cg-panel__sub">
+            Every new mother deserves a circle of care. Join our network of trained, trusted postpartum caregivers and
+            help rebuild what was lost.
+          </p>
+        </div>
+
+        <!-- Benefit chips -->
+        <div class="cg-panel__chips">
+          <span class="cg-chip">💚 Fair pay</span>
+          <span class="cg-chip">📚 Free training</span>
+          <span class="cg-chip">🔒 Verified status</span>
+          <span class="cg-chip">📱 Managed bookings</span>
+        </div>
+
+        <!-- Floating stat cards -->
+        <div class="cg-panel__stat cg-panel__stat--1 cg-float-a">
+          <span class="cg-panel__stat-num">50+</span>
+          <span class="cg-panel__stat-label">Mothers supported</span>
+        </div>
+
+        <div class="cg-panel__stat cg-panel__stat--2 cg-float-b">
+          <span class="cg-panel__stat-num">Lagos</span>
+          <span class="cg-panel__stat-label">Launching first</span>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ════════ RIGHT — Form panel ════════ -->
+    <div class="cg-form-panel">
+      <div class="cg-form-scroll">
+
+        <div class="cg-form-inner">
+
+          <!-- Mobile logo (hidden on desktop) -->
+          <div class="cg-mobile-header">
+            <div class="cg-mobile-badge">
+              <span class="cg-badge-dot-sm"></span>
+              Now accepting applications
+            </div>
+            <h1 class="cg-mobile-headline">Join the Omugwo village</h1>
+            <p class="cg-mobile-sub">We are building a network of trained, trusted postpartum caregivers across Nigeria.
+            </p>
+          </div>
+
+          <div class="cg-form-card" id="cg-form-card">
+
+            <div class="cg-form-header">
+              <h2 class="cg-form-title">Caregiver Registration</h2>
+              <p class="cg-form-sub">Tell us about yourself. We review every application personally.</p>
+            </div>
+
+            <div class="cg-form-accent" aria-hidden="true"></div>
+
+            <!-- ── Section 1: Personal ── -->
+            <div class="cg-section">
+              <p class="cg-section__label">Personal Information</p>
+
+              <div class="cg-field-row">
+                <div class="cg-field">
+                  <label for="cg-name">Full Name*</label>
+                  <input id="cg-name" type="text" placeholder="Adaeze Okonkwo" autocomplete="name" required="">
+                  <div class="cg-field__bar"></div>
+                </div>
+                <div class="cg-field">
+                  <label for="cg-phone">Phone Number*</label>
+                  <input id="cg-phone" type="tel" placeholder="+234 812 345 6789" autocomplete="tel" required="">
+                  <div class="cg-field__bar"></div>
+                </div>
+              </div>
+
+              <div class="cg-field">
+                <label for="cg-email">Email Address*</label>
+                <input id="cg-email" type="email" placeholder="adaeze@email.com" autocomplete="email" required="">
+                <div class="cg-field__bar"></div>
+              </div>
+
+              <div class="cg-field">
+                <label for="cg-address">Home Address*</label>
+                <input id="cg-address" type="text" placeholder="Street, area, city" autocomplete="street-address"
+                  required="">
+                <div class="cg-field__bar"></div>
+              </div>
+            </div>
+
+            <!-- ── Section 2: Preferred contact ── -->
+            <div class="cg-section">
+              <p class="cg-section__label">Preferred Contact Method*</p>
+              <p class="cg-section__hint">Select all that apply</p>
+              <div class="cg-checkbox-group" role="group" aria-label="Preferred contact method">
+                <label class="cg-checkbox">
+                  <input type="checkbox" name="cg-contact" value="WhatsApp">
+                  <span class="cg-checkbox__box"></span>
+                  <span>WhatsApp</span>
+                </label>
+                <label class="cg-checkbox">
+                  <input type="checkbox" name="cg-contact" value="Phone call">
+                  <span class="cg-checkbox__box"></span>
+                  <span>Phone call</span>
+                </label>
+                <label class="cg-checkbox">
+                  <input type="checkbox" name="cg-contact" value="Text message">
+                  <span class="cg-checkbox__box"></span>
+                  <span>Text message</span>
+                </label>
+                <label class="cg-checkbox">
+                  <input type="checkbox" name="cg-contact" value="Email">
+                  <span class="cg-checkbox__box"></span>
+                  <span>Email</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- ── Section 3: Background ── -->
+            <div class="cg-section">
+              <p class="cg-section__label">Background</p>
+
+              <div class="cg-field">
+                <label for="cg-education">Highest Level of Education*</label>
+                <select id="cg-education" required="">
+                  <option value="">Select an option</option>
+                  <option>Primary school</option>
+                  <option>Junior secondary school (JSS3)</option>
+                  <option>Senior secondary school (WAEC/NECO)</option>
+                  <option>Diploma or certificate</option>
+                  <option>OND (Ordinary National Diploma)</option>
+                  <option>HND (Higher National Diploma)</option>
+                  <option>Bachelor's degree</option>
+                  <option>Postgraduate (Masters or PhD)</option>
+                  <option>Vocational / trade certification</option>
+                </select>
+                <div class="cg-field__bar"></div>
+              </div>
+
+              <div class="cg-field">
+                <label for="cg-occupation">Current Occupation*</label>
+                <input id="cg-occupation" type="text" placeholder="e.g. Nurse, Midwife, Nanny, Homemaker" required="">
+                <div class="cg-field__bar"></div>
+              </div>
+            </div>
+
+            <!-- ── Section 4: Experience ── -->
+            <div class="cg-section">
+              <p class="cg-section__label">Experience</p>
+
+              <div class="cg-field">
+                <label for="cg-postpartum-exp">Experience with postpartum care?*</label>
+                <select id="cg-postpartum-exp" required="">
+                  <option value="">Select an option</option>
+                  <option>Yes — professionally (nurse, midwife, doula)</option>
+                  <option>Yes — informally (family, community, traditional)</option>
+                  <option>Yes — both professional and informal</option>
+                  <option>No, but I am willing to learn</option>
+                </select>
+                <div class="cg-field__bar"></div>
+              </div>
+
+              <div class="cg-field" id="cg-postpartum-detail-wrap">
+                <label for="cg-postpartum-detail">Briefly describe your postpartum care experience</label>
+                <textarea id="cg-postpartum-detail" rows="3" maxlength="500"
+                  placeholder="e.g. Worked as a maternity nurse for 3 years at Lagos University Teaching Hospital..."></textarea>
+                <div class="cg-field__bar"></div>
+                <span class="cg-char-count" id="cg-postpartum-count">0 / 500</span>
+              </div>
+
+              <div class="cg-field">
+                <label for="cg-domestic-exp">Experience with domestic work?*</label>
+                <select id="cg-domestic-exp" required="">
+                  <option value="">Select an option</option>
+                  <option>Yes — cooking, cleaning, childcare and household management</option>
+                  <option>Yes — some domestic experience</option>
+                  <option>No domestic experience</option>
+                </select>
+                <div class="cg-field__bar"></div>
+              </div>
+            </div>
+
+            <!-- ── Section 5: Training & CV ── -->
+            <div class="cg-section">
+              <p class="cg-section__label">Training &amp; Documents</p>
+
+              <div class="cg-field">
+                <label for="cg-training">Available for a training course?*</label>
+                <select id="cg-training" required="">
+                  <option value="">Select an option</option>
+                  <option>Yes — I can attend in person in Lagos</option>
+                  <option>Yes — online training works for me</option>
+                  <option>Yes — either in person or online</option>
+                  <option>Not sure yet — tell me more</option>
+                  <option>No, I cannot attend training</option>
+                </select>
+                <div class="cg-field__bar"></div>
+              </div>
+
+              <!-- CV upload -->
+              <div class="cg-field cg-field--file">
+                <label for="cg-cv">Attach your CV <span class="cg-optional">(optional but recommended)</span></label>
+                <div class="cg-upload-wrap" id="cg-upload-wrap">
+                  <input id="cg-cv" type="file" name="cv" accept=".pdf,.doc,.docx,.rtf">
+                  <div class="cg-upload-ui" id="cg-upload-ui">
+                    <span class="cg-upload-icon">📎</span>
+                    <span class="cg-upload-text" id="cg-upload-text">Click to attach CV</span>
+                    <span class="cg-upload-hint">PDF, Word or RTF — max 5MB</span>
+                  </div>
+                </div>
+                <p class="cg-upload-note">No CV? Share a Google Drive or Dropbox link instead:</p>
+                <div class="cg-field" style="margin-top:0.5rem;">
+                  <input id="cg-cv-link" type="url" placeholder="https://drive.google.com/... (optional)">
+                  <div class="cg-field__bar"></div>
+                </div>
+              </div>
+            </div>
+
+            <button class="cg-submit-btn" id="cg-submit-btn" type="button">
+              Submit Application
+            </button>
+
+            <p class="cg-form-note">We review every application within 5 business days. 🌿</p>
+
+          </div>
+
+          <!-- Success -->
+          <div class="cg-success" id="cg-success" hidden="">
+            <div class="cg-success__burst" aria-hidden="true"></div>
+            <div class="cg-success__icon">🌿</div>
+            <h2 class="cg-success__title">Application received!</h2>
+            <p class="cg-success__text">Thank you for your interest in joining the Omugwo network. We review every
+              application personally and will be in touch within 5 business days.</p>
+            <p class="cg-success__text">In the meantime, tell a colleague who may also be interested.</p>
+            <div class="cg-success__actions">
+              <a href="index.html" class="btn btn--outline">Back to Home</a>
+              <a href="about.html" class="btn btn--sage">Learn About Us</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- end .cg-page -->
+
+
+  <!-- ── Footer ── -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <img src="assets\omugwologo-nobg.png" alt="" width="150" height="40" class="footer__logo-img">
+            <span class="footer__logo-text"></span>
+          </div>
+          <p>Thoughtfully building care for you and your baby. Rooted in African tradition, designed for modern
+            families.</p>
+          <div class="footer__social" aria-label="Social media links">
+            <a href="https://instagram.com/Omugwo.com.ng" class="footer__social-link" aria-label="Instagram"
+              target="_blank" rel="noopener"><svg width="14" height="14" viewbox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5"></rect>
+                <circle cx="12" cy="12" r="5"></circle>
+                <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"></circle>
+              </svg></a>
+            <a href="https://twitter.com/Omugwo.com.ng" class="footer__social-link" aria-label="Twitter / X"
+              target="_blank" rel="noopener"><svg width="14" height="14" viewbox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
+                </path>
+              </svg></a>
+            <a href="https://facebook.com/Omugwo.com.ng" class="footer__social-link" aria-label="Facebook"
+              target="_blank" rel="noopener"><svg width="14" height="14" viewbox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z">
+                </path>
+              </svg></a>
+          </div>
+        </div>
+        <div>
+          <p class="footer__col-title">Quick Links</p>
+          <ul class="footer__links" role="list">
+            <li><a href="index.html" class="footer__link">Home</a></li>
+            <li><a href="#about" class="footer__link">About</a></li>
+            <li><a href="services.html" class="footer__link">Services</a></li>
+            <li><a href="#how-it-works" class="footer__link">How It Works</a></li>
+            <li><a href="#faq" class="footer__link">FAQs</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer__col-title">Contact</p>
+          <ul class="footer__links" role="list">
+            <li><a href="tel:+2349065400403" class="footer__link">+234 906 540 0403</a></li>
+            <li><a href="tel:+234 817 352 0888" class="footer__link">+234 817 352 0888</a></li>
+            <li><a href="mailto:omugwo.com.ng@gmail.com" class="footer__link">omugwo.com.ng@gmail.com</a></li>
+            <li><a href="contact.html" class="footer__link">Contact Form</a></li>
+            <li><a href="contact.html" class="footer__link">Partner with Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer__col-title">Resources</p>
+          <ul class="footer__links" role="list">
+            <li><a href="coming-soon.html" class="footer__link">Omugwo Academy</a></li>
+            <li><a href="caregiver.html" class="footer__link">Become a Caregiver</a></li>
+            <li><a href="services.html" class="footer__link">Postpartum Guide</a></li>
+            <li><a href="coming-soon.html" class="footer__link">Press</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">&copy; 2026 Omugwo.com.ng (RC: ). All rights reserved.</p>
+        <nav class="footer__legal" aria-label="Legal">
+          <a href="coming-soon.html">Privacy Policy</a>
+          <a href="coming-soon.html">Terms of Service</a>
+          <a href="coming-soon.html">Cookie Policy</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/pages.js"></script>
+  <script src="js/caregiver.js"></script>
+</body>
+
+</html>
