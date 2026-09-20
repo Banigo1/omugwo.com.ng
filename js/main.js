@@ -436,6 +436,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
   document.querySelectorAll(".newsletter-form").forEach((form) => {
+    const initialLabel =
+      form.querySelector('button[type="submit"]')?.innerHTML ?? "";
     form.addEventListener("submit", async (e) => {
       e.preventDefault();
       const input = form.querySelector('input[name="EMAIL"]');
@@ -443,18 +445,17 @@ document.addEventListener("DOMContentLoaded", () => {
       const email = input?.value.trim();
       if (!email) return;
 
-      const original = btn.textContent;
-      btn.textContent = "Sending…";
+      btn.innerHTML = "Sending…";
       btn.disabled = true;
 
       try {
         await submitToMailchimp(email);
-        btn.textContent = "You're in! ✓";
+        btn.innerHTML = "You're in! ✓";
         btn.style.background = "var(--sage)";
         btn.style.boxShadow = "0 2px 12px rgba(122,158,126,0.4)";
         input.value = "";
         setTimeout(() => {
-          btn.textContent = original;
+          btn.innerHTML = initialLabel;
           btn.style.background = "";
           btn.style.boxShadow = "";
           btn.disabled = false;
@@ -465,17 +466,17 @@ document.addEventListener("DOMContentLoaded", () => {
           err.message &&
           err.message.toLowerCase().includes("already subscribed")
         ) {
-          btn.textContent = "Already subscribed ✓";
+          btn.innerHTML = "Already subscribed ✓";
           btn.style.background = "var(--sage)";
           input.value = "";
           setTimeout(() => {
-            btn.textContent = original;
+            btn.innerHTML = initialLabel;
             btn.style.background = "";
             btn.disabled = false;
           }, 3500);
         } else {
           console.error("Mailchimp error:", err.message);
-          btn.textContent = "Try again";
+          btn.innerHTML = "Try again";
           btn.style.background = "";
           btn.disabled = false;
         }

@@ -88,6 +88,9 @@
 .hero__headline {
   animation: fadeUp 0.9s cubic-bezier(0.25, 1, 0.5, 1) both;
   animation-delay: 0.35s;
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 7vw, 5.5rem);
+  font-weight: 700;
 }
 .hero__subtext {
   animation: fadeUp 0.9s cubic-bezier(0.25, 1, 0.5, 1) both;
@@ -115,6 +118,7 @@
   transform: none;
   transition: none;
   animation-fill-mode: both;
+  font-weight: 700p;
 }
 /* Mark as visible so JS observer doesn't override */
 .hero__headline,

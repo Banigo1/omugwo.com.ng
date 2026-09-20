@@ -212,15 +212,14 @@ textarea {
   justify-content: space-between;
   backdrop-filter: blur(12px) saturate(180%);
   -webkit-backdrop-filter: blur(12px) saturate(180%);
-  background: rgba(255, 255, 255, 0.1);
   border-radius: var(--radius-full);
   padding: var(--space-3) var(--space-5);
-  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.08);
   transition: all 0.4s var(--ease-out-quart);
 }
 
 .nav.nav--fixed .nav__pill {
-  background: rgba(253, 248, 243, 0.94);
+  /* background: rgba(253, 248, 243, 0.94); */
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
 }
 
@@ -268,9 +267,9 @@ textarea {
 .nav__links {
   display: flex;
   align-items: center;
-  gap: var(--space-6);
+  gap: var(--space-4);
   margin: 0 auto;
-  padding: 0 var(--space-8);
+  padding: 0 var(--space-4);
 }
 .nav__link {
   font-size: var(--text-sm);
@@ -442,7 +441,7 @@ textarea {
   object-position: center top;
   /* Ken Burns zoom effect on active slide */
   transform: scale(1);
-  transition: transform 6s ease-out;
+  transition: transform 2s ease-out;
 }
 .hero__slide--active .hero__slide-img {
   transform: scale(1.06);
@@ -457,9 +456,9 @@ textarea {
   align-items: center;
   justify-content: center;
   gap: var(--space-3);
-  color: rgba(253, 248, 243, 0.45);
+  /* color: rgba(253, 248, 243, 0.45); */
   font-size: var(--text-sm);
-  font-weight: 500;
+  font-weight: 900;
   letter-spacing: 0.03em;
 }
 .hero__slide-placeholder small {
@@ -473,14 +472,13 @@ textarea {
 .hero__bg-overlay {
   position: absolute;
   inset: 0;
-  background:
-    linear-gradient(
-      to right,
-      rgba(20, 14, 10, 0.75) 0%,
-      rgba(20, 14, 10, 0.45) 50%,
-      rgba(20, 14, 10, 0.15) 100%
-    ),
-    linear-gradient(to top, rgba(20, 14, 10, 0.7) 0%, transparent 45%);
+  background:linear-gradient(to right,
+      rgba(20, 14, 10, 0.25) 0%,
+      rgba(20, 14, 10, 0.70) 50%,
+      rgba(20, 14, 10, 0.25) 100%
+  ),
+    linear-gradient(to top,
+      rgba(20, 14, 10, 0.45) 0%, transparent 60%);
   z-index: 1;
 }
 
@@ -536,23 +534,21 @@ textarea {
   padding-bottom: clamp(var(--space-10), 18vw, 12rem);
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
+  align-items: left;
+  text-align: left;
 }
 
 .hero__headline {
   font-family: var(--font-display);
-  font-size: var(--text-2xl);
-  font-weight: 600;
-  line-height: 1.08;
   letter-spacing: -0.03em;
   color: var(--white);
   margin-bottom: var(--space-5);
+  padding: 100px 0px 30px 0px;
 }
 
 .hero__subtext {
   font-size: clamp(var(--text-base), 2vw, var(--text-md));
-  color: rgba(253, 248, 243, 0.8);
+  color: var(--white);
   line-height: 1.65;
   max-width: 44ch;
   margin-bottom: var(--space-8);
@@ -600,7 +596,7 @@ textarea {
   align-items: center;
   gap: var(--space-2);
   font-size: var(--text-sm);
-  color: rgba(253, 248, 243, 0.85);
+  color: var(--white);
   font-weight: 500;
 }
 
@@ -623,9 +619,9 @@ textarea {
   gap: 0.55rem;
   margin-bottom: clamp(1.25rem, 3vh, 2rem);
   padding: 0.25rem 0.65rem 0.25rem 0.3rem;
-  border: 1px solid rgba(44, 32, 22, 0.14);
+  border: 1px solid rgba(253, 248, 243, 0.25);
   border-radius: var(--radius-full);
-  color: var(--earth-soft);
+  color: var(--white);
   font-size: var(--text-xs);
 }
 
@@ -648,7 +644,7 @@ textarea {
   margin-bottom: 1rem;
   font-size: clamp(2.25rem, 4.5vw, 3.8rem);
   line-height: 1.02;
-  color: var(--earth);
+  color: var(--white);
 }
 
 .hero__subtext {
@@ -656,7 +652,7 @@ textarea {
   margin-bottom: 1.35rem;
   font-size: clamp(0.8rem, 1.4vw, 0.92rem);
   line-height: 1.55;
-  color: var(--text-secondary);
+  color: var(--white);
 }
 
 .hero__actions {
@@ -2811,7 +2807,7 @@ textarea {
 /* Contact card — last item in grid, spans full width */
 .faq__contact-card {
   grid-column: 1 / -1;
-  background: linear-gradient(135deg, #3f3b36 0%, #5a4a3a 100%);
+  background: linear-gradient(135deg, #1e3a5f 0%, #1e3a5f 100%);
   border-radius: 20px;
   padding: clamp(var(--space-8), 4vw, var(--space-10))
     clamp(var(--space-8), 5vw, var(--space-16));
@@ -2889,7 +2885,7 @@ textarea {
       /* Earth Root overlay */ rgba(58, 40, 32, 0.9) 100%
         /* Deep Rust overlay */
     ),
-    url("../images/motherandchild2.jpg"); /* Replace with your image path */
+    url("../images/sleeping-baby.jpg");
 
   background-size: cover;
   background-position: center;
@@ -3284,10 +3280,7 @@ textarea {
 .footer {
   position: relative;
   isolation: isolate;
-  background:
-    radial-gradient(circle at 20% 20%, rgba(91, 145, 197, 0.2), transparent 28%),
-    radial-gradient(circle at 72% 22%, rgba(47, 111, 176, 0.2), transparent 30%),
-    linear-gradient(180deg, #12263b 0%, #1e4b76 100%);
+  background: #24537F;
   padding: clamp(var(--space-12), 6vw, var(--space-20)) 0 var(--space-8);
   overflow: hidden;
 }
@@ -3299,18 +3292,27 @@ textarea {
   pointer-events: none;
 }
 .footer::before {
-  background:
-    radial-gradient(circle at 16% 30%, rgba(136, 183, 213, 0.16), transparent 22%),
-    radial-gradient(circle at 58% 34%, rgba(91, 145, 197, 0.18), transparent 26%),
-    radial-gradient(circle at 82% 48%, rgba(47, 111, 176, 0.14), transparent 28%);
-  filter: blur(55px);
-  opacity: 0.95;
-  z-index: 0;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(160, 35, 56, 0.04) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: -1;
 }
 .footer::after {
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.01) 18%, rgba(255, 255, 255, 0.02) 52%, rgba(255, 255, 255, 0.01) 100%);
-  mix-blend-mode: screen;
-  z-index: 0;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;    
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to bottom, rgba(9, 10, 15, 0), transparent);
+  pointer-events: none;
+  z-index: 1;
 }
 .footer > .container {
   position: relative;
@@ -3326,7 +3328,7 @@ textarea {
 }
 .footer__brand p {
   font-size: var(--text-sm);
-  color: rgba(253, 245, 236, 0.5);
+  color: rgba(255, 255, 255, 0.971);
   line-height: 1.7;
   max-width: 34ch;
   margin-top: var(--space-4);
@@ -3348,25 +3350,16 @@ textarea {
 .footer__social {
   display: flex;
   gap: var(--space-3);
-  margin-top: var(--space-6);
+  margin-top: var(--space-4);
 }
 .footer__social-link {
-  width: 36px;
-  height: 36px;
   border-radius: 50%;
-  background: rgba(253, 245, 236, 0.08);
-  border: 1px solid rgba(253, 245, 236, 0.12);
   display: grid;
   place-items: center;
   color: rgba(253, 245, 236, 0.6);
-  font-size: 0.85rem;
   transition:
     background var(--transition-fast),
     color var(--transition-fast);
-}
-.footer__social-link:hover {
-  background: rgba(47, 111, 176, 0.25);
-  color: var(--rust-light);
 }
 .footer__col-title {
   font-size: var(--text-sm);

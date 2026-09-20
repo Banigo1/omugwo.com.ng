@@ -4,20 +4,57 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description"
-    content="Omugwo.com.ng, Trusted postpartum care for Nigerian mothers. Find screened caregivers, access expert guidance, and receive the support you deserve after birth.">
-  <title>Omugwo.com.ng, Trusted Postpartum Care, Right at Home</title>
+  <meta name="description" content="Omugwo.com.ng, Trusted postpartum care for Nigerian mothers. Find screened caregivers, access expert guidance, and receive the support you deserve after birth.">
+  <title>Omugwo.com.ng</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/animations.css">
-  <link rel="icon" type="image/svg+xml" href="assets\omugwofavicon-nobg.png">
+  <link rel="icon" type="image/png" href="assets/omugwo-logo.png">
 </head>
 
 <body>
 
   <!-- ============================================
-     HERO, Full-bleed with floating pill nav
-     ============================================ -->
+    HERO, Full-bleed with floating pill nav
+    ============================================ -->
   <section class="hero" id="home" aria-label="Hero">
+
+    <!-- Hero image slider -->
+    <div class="hero__slider" aria-hidden="true">
+      <div class="hero__slide">
+        <div class="hero__slide-img hero__slide-placeholder">
+          <img src="images/banner-two-bg11.jpg" alt="" class="hero__slide-img">
+        </div>
+      </div>
+      <div class="hero__slide">
+        <div class="hero__slide-img hero__slide-placeholder"
+          style="background:linear-gradient(135deg,#5C4430,#3A2A1C,#B89A80);">
+          <img src="images/hero5.jpg" alt="" class="hero__slide-img">
+        </div>
+      </div>
+      <div class="hero__slide hero__slide--active">
+        <div class="hero__slide-img hero__slide-placeholder"
+          style="background:linear-gradient(135deg,#4A3A2A,#2C2016,#8A7060);">
+          <img src="images/hero3.jpg" alt="" class="hero__slide-img">
+        </div>
+      </div>
+      <div class="hero__slide">
+        <div class="hero__slide-img hero__slide-placeholder"
+          style="background:linear-gradient(135deg,#4A3A2A,#2C2016,#8A7060);">
+          <img src="images/banner-one-bg11.jpg" alt="" class="hero__slide-img">
+        </div>
+      </div>
+
+      <!-- Overlay gradient for text readability -->
+      <div class="hero__bg-overlay"></div>
+
+      <!-- Slider dots -->
+      <div class="hero__slider-dots" aria-label="Slide indicators">
+        <button class="hero__dot" data-slide="0" aria-label="Go to slide 1"></button>
+        <button class="hero__dot" data-slide="1" aria-label="Go to slide 2"></button>
+        <button class="hero__dot hero__dot--active" data-slide="2" aria-label="Go to slide 3"></button>
+        <button class="hero__dot" data-slide="3" aria-label="Go to slide 4"></button>
+      </div>
+    </div>
 
     <!-- Floating pill navbar (lives inside hero) -->
     <nav class="nav" role="navigation" aria-label="Main navigation">
@@ -25,7 +62,7 @@
         <div class="nav__pill">
 
           <a href="index.html" class="nav__logo" aria-label="Omugwo.com.ng Home">
-            <img src="assets\omugwologo-nobg.png" alt="" class="nav__logo-img" width="28" height="28">
+            <img src="assets/omugwologo-nobg.png" alt="" class="nav__logo-img" width="28" height="28">
           </a>
           <ul class="nav__links" role="list">
             <li><a href="index.html" class="nav__link">Home</a></li>
@@ -35,7 +72,7 @@
             <li><a href="services.html" class="nav__link">Services</a></li>
             <li><a href="contact.html" class="nav__link">Contact</a></li>
           </ul>
-          
+
           <button class="nav__hamburger" aria-label="Toggle menu" aria-expanded="false">
             <span></span><span></span><span></span>
           </button>
@@ -50,7 +87,7 @@
         <span></span><span></span>
       </button>
       <a href="index.html" class="nav__mobile-logo" aria-label="Omugwo.com.ng Home">
-        <img src="assets\omugwologo-nobg.png" alt="Omugwo.com.ng" class="nav__mobile-logo-img">
+        <img src="assets/omugwologo-nobg.png" alt="Omugwo.com.ng" class="nav__mobile-logo-img">
       </a>
       <ul role="list">
         <li><a href="index.html" class="nav__link">Home</a></li>
@@ -60,14 +97,19 @@
         <li><a href="services.html" class="nav__link">Services</a></li>
         <li><a href="contact.html" class="nav__link">Contact</a></li>
       </ul>
-      <div style="display:flex;flex-direction:column;gap:1rem;margin-top:auto;">
-        <a href="find-care.html" class="btn btn--outline">Join Waitlist</a>
-        <a href="find-care.html" class="btn btn--rust">Get Started</a>
-      </div>
     </div>
 
     <!-- Hero copy and image collage -->
     <div class="hero__content">
+      <h1 class="hero__headline reveal">
+        Trusted care for you and your baby, <br>
+        right at home
+      </h1>
+
+      <p class="hero__subtext reveal reveal-delay-1">
+        Find experienced, verified caregivers to support you before and after childbirth, anywhere in Nigeria.
+      </p>
+
       <div class="hero__trust reveal">
         <span class="hero__trust-avatars" aria-hidden="true">
           <img src="images/mother1.jpg" alt="">
@@ -77,138 +119,10 @@
         <span>50+ mothers supported</span>
       </div>
 
-      <h1 class="hero__headline reveal">
-        Trusted care for you and your baby,<br>
-        right at home
-      </h1>
-
-      <p class="hero__subtext reveal reveal-delay-1">
-        Find experienced, verified caregivers to support you before and after childbirth, anywhere in Nigeria.
-      </p>
-
       <div class="hero__actions reveal reveal-delay-2">
-        <a href="find-care.html" class="btn btn--ghost-white btn--lg">Find a caregiver</a>
+        <a href="contact.html" class="btn btn--ghost-white btn--lg">Call us now</a>
       </div>
 
-      <div class="hero__collage reveal reveal-delay-3" aria-label="Omugwo care in action">
-        <div class="hero__collage-column hero__collage-column--outer">
-          <div class="hero__collage-card hero__collage-card--top">
-            <img src="images/hero1.jpg" alt="Mother receiving support">
-          </div>
-          <div class="hero__collage-card hero__collage-card--fade">
-            <img src="images/service3.jpg" alt="Newborn care">
-          </div>
-        </div>
-
-        <div class="hero__collage-column">
-          <div class="hero__collage-card">
-            <img src="images/hero2.jpg" alt="Caregiver supporting a mother">
-          </div>
-          <div class="hero__collage-card">
-            <img src="images/motherandchild2.jpg" alt="Mother and child at home">
-          </div>
-        </div>
-
-        <div class="hero__collage-column hero__collage-column--centre">
-          <div class="hero__collage-card hero__collage-card--main">
-            <img src="images/hero3.jpg" alt="Mother with her caregiver">
-          </div>
-          <div class="hero__collage-card hero__collage-card--fade">
-            <img src="images/motherandchild3.jpg" alt="Mother resting with her baby">
-          </div>
-        </div>
-
-        <div class="hero__collage-column">
-          <div class="hero__collage-card">
-            <img src="images/hero4.jpg" alt="Caregiver offering guidance">
-          </div>
-          <div class="hero__collage-card">
-            <img src="images/hero5.jpg" alt="Mother receiving postpartum care">
-          </div>
-        </div>
-
-        <div class="hero__collage-column hero__collage-column--outer">
-          <div class="hero__collage-card hero__collage-card--top">
-            <img src="images/problem-4.jpg" alt="Mother and baby care">
-          </div>
-          <div class="hero__collage-card hero__collage-card--fade">
-            <img src="images/problem-3.jpg" alt="Mother resting at home">
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </section>
-
-  <!-- ============================================
-     PROBLEM SECTION
-     ============================================ -->
-  <section class="problem" id="about" aria-label="The problem we solve">
-    <div class="container">
-
-      <div class="problem__inner">
-
-        <!-- Left col: headline + pain points + CTA -->
-        <div class="problem__left">
-          <p class="problem__label reveal">The Problem</p>
-          <h2 class="problem__headline reveal reveal-delay-1">
-            Motherhood shouldn't feel <em>overwhelming</em>
-          </h2>
-
-          <ul class="problem__pain-list" role="list">
-            <li class="problem__pain-item reveal reveal-delay-1">
-              <div class="problem__pain-item-inner">
-                <p class="problem__pain-title">No reliable help after delivery</p>
-                <p class="problem__pain-text">When you need support the most, it's often the hardest to find.</p>
-              </div>
-            </li>
-            <li class="problem__pain-item reveal reveal-delay-2">
-              <div class="problem__pain-item-inner">
-                <p class="problem__pain-title">Family support isn't always available</p>
-                <p class="problem__pain-text">Loved ones may care, but they can't always be there when you need them.
-                </p>
-              </div>
-            </li>
-            <li class="problem__pain-item reveal reveal-delay-3">
-              <div class="problem__pain-item-inner">
-                <p class="problem__pain-title">Hiring help feels risky or expensive</p>
-                <p class="problem__pain-text">Finding someone you trust shouldn't feel uncertain or out of reach.</p>
-              </div>
-            </li>
-          </ul>
-
-          <p class="problem__solution reveal reveal-delay-4">
-            We connect you with trusted, experienced caregivers who provide safe, in-home support when you need it most.
-          </p>
-
-          <div class="reveal" style="margin-top: var(--space-8);">
-            <a href="find-care.html" class="btn btn--primary btn--lg">Get a Caregiver</a>
-          </div>
-        </div>
-
-        <!-- Right col: two portrait images side by side -->
-        <div class="problem__images" aria-hidden="true">
-          <div class="problem__img-wrap problem__img-wrap--1">
-            <!--
-            Replace with: <img src="images/problem-1.jpg" alt="" class="problem__img" />
-            Photo tip: Mother with newborn, warm tones, portrait crop
-          -->
-            <div class="problem__img img-placeholder">
-              <img src="images/service3.jpg" alt="" class="problem__img">
-            </div>
-          </div>
-          <div class="problem__img-wrap problem__img-wrap--2">
-            <!--
-            Replace with: <img src="images/problem-2.jpg" alt="" class="problem__img" />
-            Photo tip: Close-up of baby or caregiver, portrait crop
-          -->
-            <div class="problem__img img-placeholder">
-              <img src="images/problem-3.jpg" alt="" class="problem__img">
-            </div>
-          </div>
-        </div>
-
-      </div>
     </div>
   </section>
 
@@ -220,9 +134,8 @@
     <!-- Header scrolls away normally -->
     <div class="container">
       <div class="svc__header">
-        <p class="svc__label reveal">What We Offer</p>
         <h2 class="svc__headline reveal reveal-delay-1">
-          Support Tailored<br>to <em>your Needs</em>
+          We offer support tailored<br>to <em>your Needs</em>
         </h2>
         <p class="svc__subtext reveal reveal-delay-2">
           Find the right kind of support for every stage of your journey. Whether you need help recovering after birth,
@@ -343,7 +256,7 @@
               <!-- CTA card -->
               <div class="svc-card svc-card--cta" data-svc-index="6" style="--float-delay:0.9s; --float-duration:6.2s;">
                 <a href="services.html" class="svc-card__cta-link">
-                  <span class="svc-card__cta-text">Explore our services</span>
+                  <span class="svc-card__cta-text">Our services</span>
                   <span class="svc-card__cta-arrow" aria-hidden="true">→</span>
                 </a>
               </div>
@@ -355,6 +268,130 @@
       </div>
     </div>
 
+  </section>
+
+  <!-- ============================================
+    GALLERY SECTION 
+    ============================================ -->
+  <section class="gallery" id="gallery" aria-label="gallery" style="padding-top: 4rem;">
+
+    <div class="hero__collage reveal reveal-delay-3" aria-label="Omugwo care in action">
+      <div class="hero__collage-column hero__collage-column--outer">
+        <div class="hero__collage-card hero__collage-card--top">
+          <img src="images/hero1.jpg" alt="Mother receiving support">
+        </div>
+        <div class="hero__collage-card hero__collage-card--fade">
+          <img src="images/service3.jpg" alt="Newborn care">
+        </div>
+      </div>
+
+      <div class="hero__collage-column">
+        <div class="hero__collage-card">
+          <img src="images/hero2.jpg" alt="Caregiver supporting a mother">
+        </div>
+        <div class="hero__collage-card">
+          <img src="images/motherandchild2.jpg" alt="Mother and child at home">
+        </div>
+      </div>
+
+      <div class="hero__collage-column hero__collage-column--centre">
+        <div class="hero__collage-card hero__collage-card--main">
+          <img src="images/hero3.jpg" alt="Mother with her caregiver">
+        </div>
+        <div class="hero__collage-card hero__collage-card--fade">
+          <img src="images/motherandchild3.jpg" alt="Mother resting with her baby">
+        </div>
+      </div>
+
+      <div class="hero__collage-column">
+        <div class="hero__collage-card">
+          <img src="images/hero4.jpg" alt="Caregiver offering guidance">
+        </div>
+        <div class="hero__collage-card">
+          <img src="images/hero5.jpg" alt="Mother receiving postpartum care">
+        </div>
+      </div>
+
+      <div class="hero__collage-column hero__collage-column--outer">
+        <div class="hero__collage-card hero__collage-card--top">
+          <img src="images/problem-4.jpg" alt="Mother and baby care">
+        </div>
+        <div class="hero__collage-card hero__collage-card--fade">
+          <img src="images/problem-3.jpg" alt="Mother resting at home">
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ============================================
+     PROBLEM SECTION
+     ============================================ -->
+  <section class="problem" id="about" aria-label="The problem we solve">
+    <div class="container">
+
+      <div class="problem__inner">
+
+        <!-- Left col: headline + pain points + CTA -->
+        <div class="problem__left">
+          <h2 class="problem__headline reveal reveal-delay-1">
+            Motherhood shouldn't feel <em>overwhelming</em>
+          </h2>
+          <ul class="problem__pain-list" role="list">
+            <li class="problem__pain-item reveal reveal-delay-1">
+              <div class="problem__pain-item-inner">
+                <p class="problem__pain-title">No reliable help after delivery</p>
+                <p class="problem__pain-text">When you need support the most, it's often the hardest to find.</p>
+              </div>
+            </li>
+            <li class="problem__pain-item reveal reveal-delay-2">
+              <div class="problem__pain-item-inner">
+                <p class="problem__pain-title">Family support isn't always available</p>
+                <p class="problem__pain-text">Loved ones may care, but they can't always be there when you need them.
+                </p>
+              </div>
+            </li>
+            <li class="problem__pain-item reveal reveal-delay-3">
+              <div class="problem__pain-item-inner">
+                <p class="problem__pain-title">Hiring help feels risky or expensive</p>
+                <p class="problem__pain-text">Finding someone you trust shouldn't feel uncertain or out of reach.</p>
+              </div>
+            </li>
+          </ul>
+
+          <p class="problem__solution reveal reveal-delay-4">
+            We connect you with trusted, experienced caregivers who provide safe, in-home support when you need it most.
+          </p>
+
+          <div class="reveal" style="margin-top: var(--space-8);">
+            <a href="find-care.html" class="btn btn--primary btn--lg">Get a Caregiver</a>
+          </div>
+        </div>
+
+        <!-- Right col: two portrait images side by side -->
+        <div class="problem__images" aria-hidden="true">
+          <div class="problem__img-wrap problem__img-wrap--1">
+            <!--
+            Replace with: <img src="images/problem-1.jpg" alt="" class="problem__img" />
+            Photo tip: Mother with newborn, warm tones, portrait crop
+          -->
+            <div class="problem__img img-placeholder">
+              <img src="images/banner-two-bg12.jpg" alt="" class="problem__img">
+            </div>
+          </div>
+          <div class="problem__img-wrap problem__img-wrap--2">
+            <!--
+            Replace with: <img src="images/problem-2.jpg" alt="" class="problem__img" />
+            Photo tip: Close-up of baby or caregiver, portrait crop
+          -->
+            <div class="problem__img img-placeholder">
+              <img src="images/problem-3.jpg" alt="" class="problem__img">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
   </section>
 
   <!-- ============================================
@@ -407,7 +444,7 @@
             </div>
           </div>
           <div class="reveal reveal-delay-3">
-            <a href="services.html" class="btn btn--primary btn--lg">Find a Caregiver</a>
+            <a href="find-care.html" class="btn btn--primary btn--lg">Get a Caregiver</a>
           </div>
         </div>
 
@@ -491,10 +528,10 @@
           </button>
           <div class="faq__answer">
             <div class="faq__answer-inner">
-              <p>Omugwo.com.ng is a marketplace platform connecting new mothers in Nigeria with vetted, trained
-                postpartum
-                caregivers. Drawing from the traditional Igbo practice, where family comes to support a new mother, we
-                modernize and formalize that care for today's families.</p>
+              <p>Omugwo.com.ng is a platform connecting new mothers in Nigeria with vetted, trained postpartum
+                caregivers.
+                Drawing from the traditional Igbo practice, where family comes to support a new mother, wemodernize and
+                formalize that care for today's families.</p>
             </div>
           </div>
         </div>
@@ -517,10 +554,9 @@
           </button>
           <div class="faq__answer">
             <div class="faq__answer-inner">
-              <p>All caregivers undergo background checks, identity verification, health screenings, and complete our
+              <p>Our caregivers undergo background checks, identity verification, health screenings, and complete our
                 Omugwo.com.ng Academy training programme. We assess cultural competency, newborn care skills, and
-                emotional
-                intelligence before any caregiver is listed.</p>
+                emotional intelligence before any caregiver is listed.</p>
             </div>
           </div>
         </div>
@@ -544,8 +580,8 @@
           </button>
           <div class="faq__answer">
             <div class="faq__answer-inner">
-              <p>We are currently launching in Port Harcourt. Abuja and Lagos coming soon. 
-                 Join the waitlist and select your city, we'll notify you the moment we expand to your area.</p>
+              <p>We are currently launching in Port Harcourt. Abuja and Lagos coming soon.
+                Join the waitlist and select your city, we'll notify you the moment we expand to your area.</p>
             </div>
           </div>
         </div>
@@ -609,12 +645,18 @@
       <span class="cta__particle"></span><span class="cta__particle"></span>
       <span class="cta__particle"></span><span class="cta__particle"></span>
     </div>
-
     <div class="container cta__inner">
       <p class="cta__subtext reveal reveal-delay-2">
         Be among the first to access trusted, culturally rooted postpartum care.
       </p>
-
+      <div class="cta__proof reveal reveal-delay-4">
+        <span class="cta__proof-avatars" aria-hidden="true">
+          <img src="images/mother1.jpg" alt="" class="cta__avatar" style="object-fit:cover" loading="lazy">
+          <img src="images/motherandchild1.jpg" alt="" class="cta__avatar" style="object-fit:cover" loading="lazy">
+          <img src="images/midwife2.jpg" alt="" class="cta__avatar" style="object-fit:cover" loading="lazy">
+        </span>
+        <p class="cta__proof-text"><strong>100+ mothers</strong> already on the waitlist</p>
+      </div>
     </div>
   </section>
 
@@ -626,34 +668,49 @@
       <div class="footer__top">
         <div class="footer__brand">
           <div class="footer__logo">
-            <img src="assets\omugwologo-nobg.png" alt="" width="150" height="40" class="footer__logo-img">
+            <img src="assets/omugwo-logo-full.png" alt="" width="180" height="50" class="footer__logo-img">
             <span class="footer__logo-text"></span>
           </div>
           <p>Thoughtfully building care for you and your baby. Rooted in African tradition, designed for modern
             families.</p>
           <div class="footer__social" aria-label="Social media links">
+            <!-- Instagram -->
             <a href="https://instagram.com/Omugwo.com.ng" class="footer__social-link" aria-label="Instagram"
               target="_blank" rel="noopener">
-              <svg width="14" height="14" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
-                stroke-linecap="round" stroke-linejoin="round">
+              <svg width="30" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <rect x="2" y="2" width="20" height="20" rx="5"></rect>
                 <circle cx="12" cy="12" r="5"></circle>
                 <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"></circle>
               </svg>
             </a>
+
+            <!-- Twitter / X -->
             <a href="https://twitter.com/Omugwo.com.ng" class="footer__social-link" aria-label="Twitter / X"
               target="_blank" rel="noopener">
-              <svg width="14" height="14" viewbox="0 0 24 24" fill="currentColor">
+              <svg width="30" height="50" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                 <path
                   d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
                 </path>
               </svg>
             </a>
+
+            <!-- Facebook -->
             <a href="https://facebook.com/Omugwo.com.ng" class="footer__social-link" aria-label="Facebook"
               target="_blank" rel="noopener">
-              <svg width="14" height="14" viewbox="0 0 24 24" fill="currentColor">
+              <svg width="30" height="50" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                 <path
                   d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z">
+                </path>
+              </svg>
+            </a>
+
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/company/omugwo/" class="footer__social-link" aria-label="LinkedIn"
+              target="_blank" rel="noopener">
+              <svg width="30" height="50" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.95v5.66H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.32 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM3.54 9h3.56v11.45H3.54V9zM22.23 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.72V1.72C24 .77 23.21 0 22.23 0z">
                 </path>
               </svg>
             </a>
@@ -663,24 +720,22 @@
           <p class="footer__col-title">Quick Links</p>
           <ul class="footer__links" role="list">
             <li><a href="index.html" class="footer__link">Home</a></li>
-            <li><a href="#about" class="footer__link">About</a></li>
+            <li><a href="about.html" class="footer__link">About</a></li>
             <li><a href="services.html" class="footer__link">Services</a></li>
-            <li><a href="#how-it-works" class="footer__link">How It Works</a></li>
-            <li><a href="#faq" class="footer__link">FAQs</a></li>
+            <li><a href="services.html#how-it-works" class="footer__link">How It Works</a></li>
+            <li><a href="index.html#faq" class="footer__link">FAQs</a></li>
           </ul>
         </div>
-
         <div>
           <p class="footer__col-title">Contact</p>
           <ul class="footer__links" role="list">
             <li><a href="tel:+2349065400403" class="footer__link">+234 906 540 0403</a></li>
-            <li><a href="tel:+234 817 352 0888" class="footer__link">+234 817 352 0888</a></li>
+            <li><a href="tel:+2348173520888" class="footer__link">+234 817 352 0888</a></li>
             <li><a href="mailto:omugwo.com.ng@gmail.com" class="footer__link">omugwo.com.ng@gmail.com</a></li>
             <li><a href="contact.html" class="footer__link">Contact Form</a></li>
             <li><a href="contact.html" class="footer__link">Partner with Us</a></li>
           </ul>
         </div>
-
         <div>
           <p class="footer__col-title">Resources</p>
           <ul class="footer__links" role="list">
@@ -690,9 +745,7 @@
             <li><a href="coming-soon.html" class="footer__link">Press</a></li>
           </ul>
         </div>
-
       </div>
-
       <div class="footer__bottom">
         <p class="footer__copy">&copy; 2026 Omugwo.com.ng (RC: ). All rights reserved.</p>
         <nav class="footer__legal" aria-label="Legal">

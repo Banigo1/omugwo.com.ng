@@ -1,0 +1,728 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Omugwo, This page is coming soon. Trusted postpartum care for Nigerian mothers.">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Coming Soon, Omugwo</title>
+  <link rel="icon" type="image/png" href="assets/omugwofavicon-nobg.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&display=swap"
+    rel="stylesheet">
+
+  <style>
+    /* ── Reset ── */
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #2C2016;
+      color: #FDF8F3;
+      min-height: 100vh;
+      overflow-x: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* ── Animated background ── */
+    @keyframes orbA {
+
+      0%,
+      100% {
+        transform: translate(0, 0) scale(1);
+      }
+
+      45% {
+        transform: translate(50px, -35px) scale(1.12);
+      }
+
+      75% {
+        transform: translate(-25px, 28px) scale(0.9);
+      }
+    }
+
+    @keyframes orbB {
+
+      0%,
+      100% {
+        transform: translate(0, 0) scale(1);
+      }
+
+      40% {
+        transform: translate(-55px, 40px) scale(1.15);
+      }
+
+      68% {
+        transform: translate(30px, -22px) scale(0.88);
+      }
+    }
+
+    @keyframes orbC {
+
+      0%,
+      100% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0.4;
+      }
+
+      50% {
+        transform: translate(-50%, -58%) scale(1.3);
+        opacity: 0.2;
+      }
+    }
+
+    .orb {
+      position: fixed;
+      border-radius: 50%;
+      filter: blur(80px);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .orb--1 {
+      width: 480px;
+      height: 480px;
+      background: radial-gradient(circle, rgba(196, 103, 74, 0.28), transparent 70%);
+      top: -100px;
+      right: -80px;
+      animation: orbA 14s ease-in-out infinite;
+    }
+
+    .orb--2 {
+      width: 380px;
+      height: 380px;
+      background: radial-gradient(circle, rgba(122, 158, 126, 0.2), transparent 70%);
+      bottom: -80px;
+      left: -60px;
+      animation: orbB 18s ease-in-out infinite;
+    }
+
+    .orb--3 {
+      width: 260px;
+      height: 260px;
+      background: radial-gradient(circle, rgba(136, 183, 213, 0.15), transparent 70%);
+      top: 50%;
+      left: 50%;
+      animation: orbC 11s ease-in-out infinite;
+    }
+
+    /* Floating particles */
+    @keyframes rise {
+      0% {
+        bottom: -10px;
+        opacity: 0;
+      }
+
+      8% {
+        opacity: 1;
+      }
+
+      92% {
+        opacity: 0.5;
+      }
+
+      100% {
+        bottom: 110%;
+        opacity: 0;
+        transform: translateX(18px) rotate(360deg);
+      }
+    }
+
+    .particle {
+      position: fixed;
+      border-radius: 50%;
+      background: rgba(253, 248, 243, 0.3);
+      pointer-events: none;
+      animation: rise linear infinite;
+      z-index: 0;
+    }
+
+    .p1 {
+      width: 4px;
+      height: 4px;
+      left: 8%;
+      animation-duration: 14s;
+      animation-delay: 0s;
+    }
+
+    .p2 {
+      width: 3px;
+      height: 3px;
+      left: 22%;
+      animation-duration: 18s;
+      animation-delay: -5s;
+    }
+
+    .p3 {
+      width: 5px;
+      height: 5px;
+      left: 40%;
+      animation-duration: 12s;
+      animation-delay: -9s;
+    }
+
+    .p4 {
+      width: 3px;
+      height: 3px;
+      left: 58%;
+      animation-duration: 16s;
+      animation-delay: -3s;
+    }
+
+    .p5 {
+      width: 4px;
+      height: 4px;
+      left: 74%;
+      animation-duration: 20s;
+      animation-delay: -7s;
+    }
+
+    .p6 {
+      width: 5px;
+      height: 5px;
+      left: 88%;
+      animation-duration: 13s;
+      animation-delay: -11s;
+    }
+
+    /* ── Nav ── */
+    nav {
+      position: relative;
+      z-index: 10;
+      padding: 1.5rem clamp(1.5rem, 5vw, 3rem);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+      text-decoration: none;
+    }
+
+    .logo__text {
+      font-family: 'Inter', sans-serif;
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #FDF8F3;
+      letter-spacing: -0.02em;
+    }
+
+    .nav__home {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: rgba(253, 248, 243, 0.55);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      transition: color 0.2s ease;
+    }
+
+    .nav__home:hover {
+      color: rgba(253, 248, 243, 0.9);
+    }
+
+    /* ── Main ── */
+    main {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: clamp(2rem, 6vw, 4rem) clamp(1.5rem, 5vw, 3rem);
+      position: relative;
+      z-index: 1;
+    }
+
+    .content {
+      max-width: 640px;
+      width: 100%;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+      animation: contentIn 0.9s cubic-bezier(0.25, 1, 0.5, 1) both;
+    }
+
+    @keyframes contentIn {
+      from {
+        opacity: 0;
+        transform: translateY(32px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Badge */
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(10px);
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      color: rgba(253, 248, 243, 0.75);
+      text-transform: uppercase;
+      padding: 0.4rem 1rem;
+      border-radius: 9999px;
+    }
+
+    .badge__dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #7BBE87;
+      box-shadow: 0 0 8px rgba(123, 190, 135, 0.8);
+      animation: pulse 2s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+
+      0%,
+      100% {
+        box-shadow: 0 0 6px rgba(123, 190, 135, 0.8);
+        transform: scale(1);
+      }
+
+      50% {
+        box-shadow: 0 0 14px rgba(123, 190, 135, 0.5);
+        transform: scale(1.3);
+      }
+    }
+
+    /* Headline */
+    h1 {
+      font-family: 'Inter', sans-serif;
+      font-size: clamp(2.6rem, 7vw, 4.5rem);
+      font-weight: 700;
+      line-height: 1.05;
+      letter-spacing: -0.04em;
+      color: #FDF8F3;
+    }
+
+    h1 em {
+      font-style: italic;
+      font-weight: 300;
+      background: linear-gradient(90deg, #D4956A, #C4674A);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    /* Subtext */
+    .sub {
+      font-size: clamp(0.9rem, 2vw, 1.05rem);
+      color: rgba(253, 248, 243, 0.6);
+      line-height: 1.75;
+      font-weight: 300;
+      max-width: 44ch;
+    }
+
+    /* ── Countdown ── */
+    .countdown {
+      display: flex;
+      gap: clamp(0.75rem, 3vw, 1.5rem);
+      margin: 0.5rem 0;
+    }
+
+    .countdown__unit {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.3rem;
+    }
+
+    .countdown__num {
+      font-family: 'Inter', sans-serif;
+      font-size: clamp(2rem, 6vw, 3.5rem);
+      font-weight: 700;
+      line-height: 1;
+      letter-spacing: -0.05em;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(8px);
+      border-radius: 16px;
+      width: clamp(72px, 16vw, 100px);
+      height: clamp(72px, 16vw, 100px);
+      display: grid;
+      place-items: center;
+      transition: transform 0.15s ease;
+    }
+
+    .countdown__sep {
+      font-family: 'Inter', sans-serif;
+      font-size: clamp(1.5rem, 4vw, 2.5rem);
+      font-weight: 300;
+      color: rgba(253, 248, 243, 0.3);
+      align-self: flex-start;
+      padding-top: clamp(0.6rem, 2vw, 1rem);
+    }
+
+    .countdown__label {
+      font-size: 0.65rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba(253, 248, 243, 0.35);
+    }
+
+    /* ── Email form ── */
+    .form {
+      display: flex;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1.5px solid rgba(255, 255, 255, 0.15);
+      border-radius: 9999px;
+      padding: 5px 5px 5px 1.4rem;
+      gap: 0.4rem;
+      width: 100%;
+      max-width: 460px;
+      transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .form:focus-within {
+      border-color: rgba(196, 103, 74, 0.6);
+      box-shadow: 0 0 0 4px rgba(196, 103, 74, 0.15);
+    }
+
+    .form input {
+      flex: 1;
+      background: none;
+      border: none;
+      outline: none;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.9rem;
+      color: #FDF8F3;
+      min-width: 0;
+    }
+
+    .form input::placeholder {
+      color: rgba(253, 248, 243, 0.4);
+    }
+
+    .form button {
+      background: #C4674A;
+      color: #fff;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.875rem;
+      font-weight: 600;
+      padding: 0.7rem 1.4rem;
+      border-radius: 9999px;
+      border: none;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: background 0.3s ease, transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease;
+    }
+
+    .form button:hover {
+      background: #A0503A;
+      transform: scale(1.04);
+      box-shadow: 0 6px 20px rgba(196, 103, 74, 0.4);
+    }
+
+    .form-note {
+      font-size: 0.7rem;
+      color: rgba(253, 248, 243, 0.35);
+      margin-top: -0.5rem;
+      letter-spacing: 0.01em;
+    }
+
+    .form-success {
+      display: none;
+      align-items: center;
+      gap: 0.6rem;
+      background: rgba(123, 190, 135, 0.15);
+      border: 1px solid rgba(123, 190, 135, 0.3);
+      border-radius: 12px;
+      padding: 0.85rem 1.2rem;
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: #A8D4AD;
+      width: 100%;
+      max-width: 460px;
+      animation: successIn 0.5s cubic-bezier(0.34, 1.2, 0.64, 1) both;
+    }
+
+    .form-success.visible {
+      display: flex;
+    }
+
+    @keyframes successIn {
+      from {
+        opacity: 0;
+        transform: scale(0.95) translateY(6px);
+      }
+
+      to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+      }
+    }
+
+    /* ── Quick links ── */
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem 1.25rem;
+      justify-content: center;
+      padding-top: 1.25rem;
+      border-top: 1px solid rgba(253, 248, 243, 0.08);
+      width: 100%;
+    }
+
+    .links a {
+      font-size: 0.78rem;
+      color: rgba(253, 248, 243, 0.4);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    .links a:hover {
+      color: rgba(253, 248, 243, 0.85);
+    }
+
+    /* ── Footer ── */
+    footer {
+      position: relative;
+      z-index: 1;
+      padding: 1.25rem;
+      text-align: center;
+      font-size: 0.68rem;
+      color: rgba(253, 248, 243, 0.25);
+      font-weight: 300;
+    }
+
+    /* ── Mobile ── */
+    @media (max-width: 480px) {
+      .form {
+        flex-direction: column;
+        border-radius: 20px;
+        padding: 1rem;
+      }
+
+      .form button {
+        width: 100%;
+      }
+
+      .countdown {
+        gap: 0.5rem;
+      }
+
+      .countdown__sep {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Background -->
+  <div class="orb orb--1" aria-hidden="true"></div>
+  <div class="orb orb--2" aria-hidden="true"></div>
+  <div class="orb orb--3" aria-hidden="true"></div>
+  <div class="particle p1" aria-hidden="true"></div>
+  <div class="particle p2" aria-hidden="true"></div>
+  <div class="particle p3" aria-hidden="true"></div>
+  <div class="particle p4" aria-hidden="true"></div>
+  <div class="particle p5" aria-hidden="true"></div>
+  <div class="particle p6" aria-hidden="true"></div>
+
+  <!-- Nav -->
+  <nav>
+    <a href="index.html" class="logo">
+      <img src="assets/omugwologo-nobg.png" alt="" width="28" height="28">
+      <span class="logo__text">Omugwo</span>
+    </a>
+    <a href="index.html" class="nav__home">
+      ← Back to home
+    </a>
+  </nav>
+
+  <!-- Main content -->
+  <main>
+    <div class="content">
+
+      <div class="badge">
+        <span class="badge__dot"></span>
+        Coming soon
+      </div>
+
+      <h1>
+        Something beautiful<br>
+        is <em>on its way</em>
+      </h1>
+
+      <p class="sub">
+        We're working hard to bring this page to life. In the meantime, join our waitlist and be among the first to know
+        when we launch.
+      </p>
+
+      <!-- Countdown, targets a launch date, update below -->
+      <div class="countdown" id="countdown" aria-label="Countdown to launch">
+        <div class="countdown__unit">
+          <div class="countdown__num" id="cd-days">--</div>
+          <span class="countdown__label">Days</span>
+        </div>
+        <span class="countdown__sep" aria-hidden="true">:</span>
+        <div class="countdown__unit">
+          <div class="countdown__num" id="cd-hours">--</div>
+          <span class="countdown__label">Hours</span>
+        </div>
+        <span class="countdown__sep" aria-hidden="true">:</span>
+        <div class="countdown__unit">
+          <div class="countdown__num" id="cd-mins">--</div>
+          <span class="countdown__label">Mins</span>
+        </div>
+        <span class="countdown__sep" aria-hidden="true">:</span>
+        <div class="countdown__unit">
+          <div class="countdown__num" id="cd-secs">--</div>
+          <span class="countdown__label">Secs</span>
+        </div>
+      </div>
+
+      <!-- Email capture -->
+      <form class="form" id="csForm" novalidate="">
+        <input type="hidden" name="_subject" value="Coming Soon, Omugwo notify me signup">
+        <input id="cs-email" type="email" name="email" placeholder="Enter your email" autocomplete="email" required="">
+        <button type="submit" id="csBtn">Notify me</button>
+      </form>
+      <p class="form-note">No spam. We'll only email you when this page is live.</p>
+
+      <div class="form-success" id="csSuccess" aria-live="polite">
+        ✓ &nbsp;You're on the list! We'll let you know the moment this goes live.
+      </div>
+
+      <!-- Quick nav -->
+      <nav class="links" aria-label="Other pages">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="find-care.html">Join Waitlist</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2026 Omugwo.com.ng (RC: 9508544). All rights reserved.
+  </footer>
+
+  <script>
+    /* ─────────────────────────────────────────
+       COUNTDOWN, set your target launch date
+       Format: 'Month DD, YYYY HH:MM:SS'
+    ───────────────────────────────────────── */
+    const LAUNCH_DATE = 'May 6, 2026 00:00:00';
+
+    function updateCountdown() {
+      const now = new Date().getTime();
+      const target = new Date(LAUNCH_DATE).getTime();
+      const diff = target - now;
+
+      const daysEl = document.getElementById('cd-days');
+      const hoursEl = document.getElementById('cd-hours');
+      const minsEl = document.getElementById('cd-mins');
+      const secsEl = document.getElementById('cd-secs');
+
+      if (diff <= 0) {
+        // Already launched, hide countdown
+        document.getElementById('countdown').style.display = 'none';
+        return;
+      }
+
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const mins = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+      const secs = Math.floor((diff % (1000 * 60)) / 1000);
+
+      const pad = n => String(n).padStart(2, '0');
+
+      // Animate number change with a tiny scale pop
+      const update = (el, val) => {
+        if (el.textContent !== pad(val)) {
+          el.style.transform = 'scale(0.85)';
+          setTimeout(() => {
+            el.textContent = pad(val);
+            el.style.transform = 'scale(1)';
+          }, 80);
+        }
+      };
+
+      update(daysEl, days);
+      update(hoursEl, hours);
+      update(minsEl, mins);
+      update(secsEl, secs);
+    }
+
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+
+
+    /* ─────────────────────────────────────────
+       EMAIL FORM, Formspree
+    ───────────────────────────────────────── */
+    const form = document.getElementById('csForm');
+    const btn = document.getElementById('csBtn');
+    const success = document.getElementById('csSuccess');
+
+    form.addEventListener('submit', async e => {
+      e.preventDefault();
+      const email = document.getElementById('cs-email').value.trim();
+      if (!email) return;
+
+      const origText = btn.textContent;
+      btn.textContent = 'Sending…';
+      btn.disabled = true;
+
+      try {
+        const res = await fetch('https://formspree.io/f/xjgjaenk', {
+          method: 'POST',
+          headers: { 'Accept': 'application/json' },
+          body: new FormData(form),
+        });
+
+        const json = await res.json().catch(() => ({}));
+
+        if (res.ok) {
+          form.style.display = 'none';
+          document.querySelector('.form-note').style.display = 'none';
+          success.classList.add('visible');
+        } else {
+          console.error('Formspree error:', res.status, json);
+          btn.textContent = 'Try again';
+          btn.disabled = false;
+        }
+      } catch (err) {
+        console.error('Network error:', err);
+        btn.textContent = 'Try again';
+        btn.disabled = false;
+      }
+    });
+  </script>
+
+</body>
+
+</html>
